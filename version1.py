@@ -183,37 +183,7 @@ def get_status(qid):
 
     return "untouched"
 
-def sidebar_label(i, qid, row_data):
-    status = get_status(qid)
 
-    topic = str(row_data.get("topic", "")).strip()
-    base_label = f"Q{i + 1} - {topic}" if topic else f"Q{i + 1}"
-
-    color_map = {
-        "untouched": "#d1d5db",      # gray
-        "unanswered": "#ef4444",     # red
-        "draft": "#f59e0b",          # yellow
-        "answered_only": "#3b82f6",  # blue
-        "one_rating_done": "#6366f1",# indigo
-        "fully_rated": "#22c55e",    # green
-    }
-    color = color_map.get(status, "#d1d5db")
-    label_html = f"""
-    <div style="display:flex; align-items:center; gap:0.5rem;">
-        <div style="
-            width:10px;
-            height:10px;
-            border-radius:50%;
-            background:{color};
-            flex-shrink:0;
-        "></div>
-        <div>
-            Q{i+1} - <b>{topic}</b>
-        </div>
-    </div>
-    """
-
-    return label_html
 def set_likert_value(state_key, value):
     st.session_state[state_key] = value
 
