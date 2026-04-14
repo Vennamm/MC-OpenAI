@@ -258,10 +258,6 @@ def parse_event_data(raw):
 
 def restore_state_from_events():
     events_df = load_participant_events()
-    st.write("Recovery debug - matched rows:", len(events_df))
-    if not events_df.empty:
-        st.write("Recovery debug - event types:", events_df["event_type"].tolist())
-        st.write(events_df.tail(10))
     if events_df.empty:
         st.session_state.recovery_loaded = True
         return
@@ -505,10 +501,7 @@ def all_rated():
 
 if not st.session_state.recovery_loaded:
     restore_state_from_events()
-
-st.write("participant_id:", st.session_state.participant_id)
-st.write("url pid:", st.query_params.get("pid", None))
-
+    
 if st.session_state.phase == "disclaimer":
     st.markdown("## Disclaimer")
     st.markdown("""
