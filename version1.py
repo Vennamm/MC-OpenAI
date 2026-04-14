@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import uuid
+import ast
 from datetime import datetime
 import gspread
 from google.oauth2.service_account import Credentials
@@ -185,6 +186,8 @@ if 'active_qid' not in st.session_state:
     st.session_state.active_qid = None
 if 'gsheet_saved' not in st.session_state:
     st.session_state.gsheet_saved = False
+if 'recovery_loaded' not in st.session_state:
+    st.session_state.recovery_loaded = False
 
 
 ui_locked = st.session_state.locked or st.session_state.finish_clicked
@@ -221,22 +224,172 @@ def log_event(event_type: str, qid: str = "", event_data: dict | None = None):
 
     event_df = pd.DataFrame([event_row])
     append_dataframe_to_sheet(event_df, EVENTS_TAB)
+def load_participant_events() -> pd.DataFrame:
+    worksheet = get_worksheet(EVENTS_TAB)
+    records = worksheet.get_all_records()
+    if not records:
+        return pd.DataFrame()
 
-def log_draft_if_changed(qid: str):
-    current_draft = st.session_state.drafts.get(qid, "").strip()
-    submitted_answer = st.session_state.answers.get(qid, {}).get("answer", "").strip()
-    last_logged_draft = st.session_state.last_logged_drafts.get(qid, "").strip()
+    events_df = pd.DataFrame(records)
+    if events_df.empty:
+        return events_df
 
-    if current_draft and current_draft != submitted_answer and current_draft != last_logged_draft:
-        log_event(
-            "draft_saved",
-            qid=qid,
-            event_data={
-                "draft_text": current_draft,
-                "draft_length": len(current_draft),
-            },
-        )
-        st.session_state.last_logged_drafts[qid] = current_draft
+    events_df["participant_id"] = events_df["participant_id"].astype(str)
+    events_df = events_df[events_df["participant_id"] == str(st.session_state.participant_id)].copy()
+
+    if not events_df.empty and "event_timestamp" in events_df.columns:
+        events_df = events_df.sort_values("event_timestamp")
+
+    return events_df
+
+
+def parse_event_data(raw):
+    if raw in [None, ""]:
+        return {}
+    if isinstance(raw, dict):
+        return raw
+    try:
+        return ast.literal_eval(raw)
+    except Exception:
+        return {}
+
+def restore_state_from_events():
+    events_df = load_participant_events()
+    if events_df.empty:
+        st.session_state.recovery_loaded = True
+        return
+
+    latest_answers = {}
+    latest_ratings = {}
+    disclaimer_seen = False
+    demographics_payload = None
+    survey_finished = False
+
+    for _, event in events_df.iterrows():
+        event_type = event.get("event_type", "")
+        qid = str(event.get("question_id", "") or "")
+        payload = parse_event_data(event.get("event_data", ""))
+
+        if event_type == "disclaimer_accepted":
+            disclaimer_seen = True
+
+        elif event_type == "demographics_submitted":
+            demographics_payload = payload
+
+        elif event_type in ["answer_completed", "answer_updated_after_ai"]:
+            latest_answers[qid] = {
+                "answer": payload.get("answer", ""),
+                "pna_flag": payload.get("pna_flag", 0),
+                "timestamp": payload.get("timestamp", event.get("event_timestamp")),
+            }
+
+        elif event_type == "question_fully_rated":
+            latest_ratings[qid] = payload
+
+        elif event_type == "survey_finished":
+            survey_finished = True
+
+    if disclaimer_seen:
+        st.session_state.consent_given = True
+
+    if demographics_payload:
+        st.session_state.demographics = {
+            "age_group": demographics_payload.get("age_group", ""),
+            "gender": demographics_payload.get("gender", ""),
+            "korean_familiarity": demographics_payload.get("korean_familiarity", ""),
+            "nationality_background": demographics_payload.get("nationality_background", ""),
+            "demographic_comments": demographics_payload.get("demographic_comments", ""),
+            "demographics_timestamp": demographics_payload.get("demographics_timestamp", ""),
+        }
+
+    for qid, payload in latest_answers.items():
+        st.session_state.answers[qid] = payload
+        st.session_state.answers_json[qid] = payload
+        st.session_state.drafts[qid] = payload.get("answer", "")
+
+    for qid, payload in latest_ratings.items():
+        chosen_idx = int(payload.get("chosen_index", 1))
+
+        det_row = get_ai_from_bank(qid, "det", 0)
+        stoch_row = get_ai_from_bank(qid, "stoch", chosen_idx)
+
+        if qid not in st.session_state.answers_json:
+            st.session_state.answers_json[qid] = {
+                "answer": "",
+                "pna_flag": None,
+                "timestamp": None,
+            }
+
+        st.session_state.answers_json[qid]["ai_det"] = {
+            "answer": det_row.get("answer", ""),
+            "temperature": det_row.get("temperature", None),
+            "model": det_row.get("model", None),
+            "run_id": det_row.get("run_id", None),
+            "generated_at_utc": det_row.get("generated_at_utc", None),
+            "error": det_row.get("error", None),
+        }
+
+        st.session_state.answers_json[qid]["ai_stoch"] = {
+            "chosen_index": chosen_idx,
+            "answer": stoch_row.get("answer", ""),
+            "temperature": stoch_row.get("temperature", None),
+            "model": stoch_row.get("model", None),
+            "run_id": stoch_row.get("run_id", None),
+            "generated_at_utc": stoch_row.get("generated_at_utc", None),
+            "error": stoch_row.get("error", None),
+        }
+
+        st.session_state.answers_json[qid]["ratings_det"] = {
+            "correctness": payload.get("det_correctness"),
+            "cultural_sensitivity": payload.get("det_cultural_sensitivity"),
+            "stereotypes": payload.get("det_stereotypes"),
+            "nuance": payload.get("det_nuance"),
+            "overall": payload.get("det_overall"),
+            "rated_timestamp": payload.get("timestamp"),
+        }
+
+        st.session_state.answers_json[qid]["ratings_stoch"] = {
+            "correctness": payload.get("stoch_correctness"),
+            "cultural_sensitivity": payload.get("stoch_cultural_sensitivity"),
+            "stereotypes": payload.get("stoch_stereotypes"),
+            "nuance": payload.get("stoch_nuance"),
+            "overall": payload.get("stoch_overall"),
+            "rated_timestamp": payload.get("timestamp"),
+        }
+
+        st.session_state.stoch_choice[qid] = chosen_idx
+
+    # Restore app phase
+    if survey_finished:
+        st.session_state.finish_clicked = True
+        st.session_state.locked = True
+    elif demographics_payload:
+        st.session_state.phase = "answer"
+    elif disclaimer_seen:
+        st.session_state.phase = "demographics"
+
+    # Restore current question index to first incomplete question
+    if not survey_finished:
+        qids = df["question_id"].astype(str).tolist()
+        first_incomplete_idx = 0
+
+        for i, qid in enumerate(qids):
+            resp = st.session_state.answers_json.get(qid, {})
+            has_answer = qid in st.session_state.answers_json
+            has_det = "ratings_det" in resp
+            has_stoch = "ratings_stoch" in resp
+
+            if not (has_answer and has_det and has_stoch):
+                first_incomplete_idx = i
+                break
+        else:
+            first_incomplete_idx = len(qids) - 1
+
+        st.session_state.idx = first_incomplete_idx
+
+    st.session_state.recovery_loaded = True
+
+
 
 def get_ai_from_bank(qid: str, variant_type: str, variant_index: int):
     subset = ai_bank[
@@ -343,6 +496,9 @@ def all_rated():
             return False
     return True
 
+if not st.session_state.recovery_loaded:
+    restore_state_from_events()
+
 if st.session_state.phase == "disclaimer":
     st.markdown("## Disclaimer")
     st.markdown("""
@@ -400,13 +556,15 @@ elif st.session_state.phase == "demographics":
             "demographic_comments": comments.strip(),
             "demographics_timestamp": datetime.now().isoformat(),
         }
-        log_event(
+       log_event(
             "demographics_submitted",
             event_data={
                 "age_group": age,
                 "gender": gender,
                 "korean_familiarity": korean_familiarity,
                 "nationality_background": nationality.strip(),
+                "demographic_comments": comments.strip(),
+                "demographics_timestamp": st.session_state.demographics["demographics_timestamp"],
             },
         )
         st.session_state.phase = "answer"
@@ -559,15 +717,6 @@ for i, row in df.iterrows():
         use_container_width=True,
         type=btn_type
     ):
-        log_draft_if_changed(qid)
-        log_event(
-            "sidebar_navigation",
-            qid=qid_side,
-            event_data={
-                "target_index": i,
-                "button_label": btn_label,
-            },
-        )
         st.session_state.phase = "answer"
         go_to_index(i)
 
@@ -661,7 +810,6 @@ if st.session_state.phase == 'answer':
         )
     
     if go_to_ratings:
-        log_draft_if_changed(qid)
         resp = st.session_state.answers_json.get(qid, {})
         if "ratings_det" not in resp:
             st.session_state.phase = "rate_det"
@@ -671,21 +819,40 @@ if st.session_state.phase == 'answer':
             st.session_state.phase = "rate_det"  # review
         st.rerun()
 
-    if submitted:
-        payload = {'answer': answer.strip(), 'pna_flag': 0, 'timestamp': datetime.now().isoformat()}
+    payload = {'answer': answer.strip(), 'pna_flag': 0, 'timestamp': datetime.now().isoformat()}
+
+        had_ai_exposure = (
+            "ratings_det" in st.session_state.answers_json.get(qid, {}) or
+            "ratings_stoch" in st.session_state.answers_json.get(qid, {})
+        )
+        prior_answer = st.session_state.answers.get(qid, {}).get("answer", "").strip()
+        is_update_after_ai = had_ai_exposure and (answer.strip() != prior_answer)
+
         st.session_state.answers[qid] = payload
         st.session_state.answers_json[str(qid)] = payload
+
+        if is_update_after_ai:
+            log_event(
+                "answer_updated_after_ai",
+                qid=qid,
+                event_data={
+                    "answer": answer.strip(),
+                    "pna_flag": 0,
+                    "timestamp": payload["timestamp"],
+                },
+            )
+        else:
+            log_event(
+                "answer_completed",
+                qid=qid,
+                event_data={
+                    "answer": answer.strip(),
+                    "pna_flag": 0,
+                    "timestamp": payload["timestamp"],
+                },
+            )
+
         st.session_state.drafts[qid] = ''
-    
-        log_event(
-            "answer_submitted",
-            qid=qid,
-            event_data={
-                "answer": answer.strip(),
-                "pna_flag": 0,
-            },
-        )
-        
         st.session_state.phase = 'rate_det'
         st.rerun()
 
@@ -693,16 +860,18 @@ if st.session_state.phase == 'answer':
         payload = {'answer': '', 'pna_flag': 1, 'timestamp': datetime.now().isoformat()}
         st.session_state.answers[qid] = payload
         st.session_state.answers_json[str(qid)] = payload
-        st.session_state.drafts[qid] = ''
-    
+
         log_event(
-            "answer_skipped",
+            "answer_completed",
             qid=qid,
             event_data={
+                "answer": "",
                 "pna_flag": 1,
+                "timestamp": payload["timestamp"],
             },
         )
-    
+
+        st.session_state.drafts[qid] = ''
         st.session_state.phase = 'rate_det'
         st.rerun()
 
@@ -785,18 +954,6 @@ elif st.session_state.phase == "rate_det":
                 "overall": r_overall,
                 "rated_timestamp": datetime.utcnow().isoformat(),
             }
-
-            log_event(
-                "det_ratings_saved",
-                qid=qid,
-                event_data={
-                    "correctness": r_correctness,
-                    "cultural_sensitivity": r_cultural,
-                    "stereotypes": r_stereotypes,
-                    "nuance": r_nuance,
-                    "overall": r_overall,
-                },
-            )
             st.session_state.phase = "rate_stoch"
             st.rerun()
 
@@ -881,17 +1038,24 @@ elif st.session_state.phase == "rate_stoch":
                 "overall": r_overall,
                 "rated_timestamp": datetime.utcnow().isoformat(),
             }
+            det_payload = st.session_state.answers_json[qid].get("ratings_det", {})
 
             log_event(
-                "stoch_ratings_saved",
+                "question_fully_rated",
                 qid=qid,
                 event_data={
                     "chosen_index": chosen_idx,
-                    "correctness": r_correctness,
-                    "cultural_sensitivity": r_cultural,
-                    "stereotypes": r_stereotypes,
-                    "nuance": r_nuance,
-                    "overall": r_overall,
+                    "det_correctness": det_payload.get("correctness"),
+                    "det_cultural_sensitivity": det_payload.get("cultural_sensitivity"),
+                    "det_stereotypes": det_payload.get("stereotypes"),
+                    "det_nuance": det_payload.get("nuance"),
+                    "det_overall": det_payload.get("overall"),
+                    "stoch_correctness": r_correctness,
+                    "stoch_cultural_sensitivity": r_cultural,
+                    "stoch_stereotypes": r_stereotypes,
+                    "stoch_nuance": r_nuance,
+                    "stoch_overall": r_overall,
+                    "timestamp": datetime.utcnow().isoformat(),
                 },
             )
 
@@ -932,15 +1096,6 @@ with col3:
         disabled=(st.session_state.idx == 0 or ui_locked),
         use_container_width=True
     ):
-        log_draft_if_changed(qid)
-        log_event(
-            "previous_question",
-            qid=qid,
-            event_data={
-                "from_index": st.session_state.idx,
-                "to_index": st.session_state.idx - 1,
-            },
-        )
         st.session_state.phase = "answer"
         go_to_index(st.session_state.idx - 1)
 
@@ -950,15 +1105,6 @@ with col4:
         disabled=(st.session_state.idx == len(df) - 1 or ui_locked),
         use_container_width=True
     ):
-        log_draft_if_changed(qid)
-        log_event(
-            "next_question",
-            qid=qid,
-            event_data={
-                "from_index": st.session_state.idx,
-                "to_index": st.session_state.idx + 1,
-            },
-        )
         st.session_state.phase = "answer"
         go_to_index(st.session_state.idx + 1)
 
@@ -973,11 +1119,12 @@ with col5:
         use_container_width=True
     ):
         log_event(
-            "survey_finished_clicked",
+            "survey_finished",
             qid=qid,
             event_data={
                 "all_done": all_done,
                 "answered_count": current_answered_count,
+                "timestamp": datetime.utcnow().isoformat(),
             },
         )
         st.session_state.finish_clicked = True
@@ -1089,23 +1236,26 @@ if all_done and st.session_state.finish_clicked:
     if not st.session_state.gsheet_saved:
         try:
             append_dataframe_to_sheet(out_df, ANALYSIS_TAB)
-            log_event(
-                "analysis_ready_saved",
-                event_data={
-                    "rows_saved": len(out_df),
-                    "tab_name": ANALYSIS_TAB,
-                },
-            )
             st.session_state.gsheet_saved = True
             st.success("Responses saved to Google Sheets.")
         except Exception as e:
             st.error(f"Could not save responses to Google Sheets: {e}")
-
-    st.download_button(
+    if "csv_download_logged" not in st.session_state:
+        st.session_state.csv_download_logged = False
+    downloaded = st.download_button(
         label="Download Responses CSV",
         data=csv_bytes,
         file_name='participant_responses.csv',
         mime="text/csv",
         use_container_width=True,
     )
+
+    if downloaded and not st.session_state.csv_download_logged:
+        log_event(
+            "survey_csv_downloaded",
+            event_data={
+                "timestamp": datetime.utcnow().isoformat(),
+            },
+        )
+        st.session_state.csv_download_logged = True
         
