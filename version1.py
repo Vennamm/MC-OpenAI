@@ -2,18 +2,42 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
-import re
 import uuid
 from datetime import datetime
+import gspread
+from google.oauth2.service_account import Credentials
+
+st.set_page_config(
+    page_title="POC Questionnaire",
+    layout="wide"
+)
 
 AI_BANK_FILE = "mock_ai_bank.csv"
+SHEET_NAME = "Participant Responses"
+QUESTIONS_FILE = 'question_bank_2.csv'
+
 NUM_STOCH = 5
+
+SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive",
+]
+
+
 
 if not os.path.exists(AI_BANK_FILE):
     st.error(f"AI bank file '{AI_BANK_FILE}' not found. Run generate_ai_bank.py first.")
     st.stop()
 
-ai_bank = pd.read_csv(AI_BANK_FILE)
+try:
+    ai_bank = pd.read_csv(AI_BANK_FILE, encoding="utf-8-sig")
+except UnicodeDecodeError:
+    ai_bank = pd.read_csv(AI_BANK_FILE, encoding="cp949")
+required_ai_cols = ["question_id", "variant_type", "variant_index", "answer"]
+missing_ai_cols = [c for c in required_ai_cols if c not in ai_bank.columns]
+if missing_ai_cols:
+    st.error(f"AI bank file is missing required columns: {missing_ai_cols}")
+    st.stop()
 ai_bank["question_id"] = ai_bank["question_id"].astype(str)
 ai_bank["variant_index"] = ai_bank["variant_index"].astype(int)
 ai_bank["variant_type"] = ai_bank["variant_type"].astype(str)
@@ -91,7 +115,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-QUESTIONS_FILE = 'question_bank_2.csv'
+
 
 
 
@@ -99,7 +123,15 @@ if not os.path.exists(QUESTIONS_FILE):
     st.error(f"Questions file '{QUESTIONS_FILE}' not found.")
     st.stop()
 
-df = pd.read_csv(QUESTIONS_FILE, encoding="utf-8")
+try:
+    df = pd.read_csv(QUESTIONS_FILE, encoding="utf-8-sig")
+except UnicodeDecodeError:
+    df = pd.read_csv(QUESTIONS_FILE, encoding="cp949")
+required_question_cols = ["question_id", "topic", "question", "translation"]
+missing_question_cols = [c for c in required_question_cols if c not in df.columns]
+if missing_question_cols:
+    st.error(f"Questions file is missing required columns: {missing_question_cols}")
+    st.stop()
 df['question_id'] = df['question_id'].astype(str)
 
 if 'participant_id' not in st.session_state:
@@ -140,9 +172,25 @@ if 'visited' not in st.session_state:
 
 if 'active_qid' not in st.session_state:
     st.session_state.active_qid = None
+if 'gsheet_saved' not in st.session_state:
+    st.session_state.gsheet_saved = False
 
 
 ui_locked = st.session_state.locked or st.session_state.finish_clicked
+
+def get_worksheet():
+    creds = Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+        scopes=SCOPES,
+    )
+    client = gspread.authorize(creds)
+    spreadsheet = client.open(SHEET_NAME)
+    return spreadsheet.sheet1
+
+def append_dataframe_to_sheet(out_df: pd.DataFrame):
+    worksheet = get_worksheet()
+    rows = out_df.fillna("").astype(str).values.tolist()
+    worksheet.append_rows(rows, value_input_option="RAW")
 
 def get_ai_from_bank(qid: str, variant_type: str, variant_index: int):
     subset = ai_bank[
@@ -841,8 +889,11 @@ if all_done and st.session_state.finish_clicked:
     rows = []
     for _, r in df.iterrows():
         qid_iter = str(r["question_id"])
-        qtext_iter = r["question"]
+        topic_iter = str(r.get("topic", "")).strip().replace('"', '').replace("'", "")
+        qtext_iter = str(r.get("question", "")).strip().replace('"', '').replace("'", "")
+        translation_iter = str(r.get("translation", "")).strip().replace('"', '').replace("'", "")
         resp = st.session_state.answers_json.get(qid_iter, {})
+        
 
         ai_det = resp.get("ai_det", {})
         ai_stoch = resp.get("ai_stoch", {})
@@ -853,7 +904,9 @@ if all_done and st.session_state.finish_clicked:
         rows.append({
             "participant_id": st.session_state.participant_id,
             "question_id": qid_iter,
+            "topic": topic_iter,
             "question": qtext_iter,
+            "translation": translation_iter,
 
             # Demographics
             "age_group": st.session_state.demographics.get("age_group", None),
@@ -903,7 +956,15 @@ if all_done and st.session_state.finish_clicked:
         })
     out_df = pd.DataFrame(rows)
     csv_bytes = out_df.to_csv(index=False).encode("utf-8")
-    
+
+    if not st.session_state.gsheet_saved:
+        try:
+            append_dataframe_to_sheet(out_df)
+            st.session_state.gsheet_saved = True
+            st.success("Responses saved to Google Sheets.")
+        except Exception as e:
+            st.error(f"Could not save responses to Google Sheets: {e}")
+
     st.download_button(
         label="Download Responses CSV",
         data=csv_bytes,
