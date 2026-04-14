@@ -16,13 +16,6 @@ st.set_page_config(
 st.write("participant_id:", st.session_state.participant_id)
 st.write("url pid:", st.query_params.get("pid", None))
 
-try:
-    debug_events = load_participant_events()
-    st.write("matched event rows:", len(debug_events))
-    if not debug_events.empty:
-        st.dataframe(debug_events.tail(10))
-except Exception as e:
-    st.write("event load error:", e)
 
 AI_BANK_FILE = "mock_ai_bank.csv"
 SHEET_NAME = "Participant Responses"
@@ -582,6 +575,15 @@ elif st.session_state.phase == "demographics":
         st.rerun()
 
     st.stop()
+
+
+try:
+    debug_events = load_participant_events()
+    st.write("matched event rows:", len(debug_events))
+    if not debug_events.empty:
+        st.dataframe(debug_events.tail(10))
+except Exception as e:
+    st.write("event load error:", e)
 
 row = df.iloc[st.session_state.idx]
 qid = str(row['question_id'])
