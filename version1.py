@@ -300,7 +300,13 @@ def all_rated():
 
 
 
-
+if st.button("Test Google Sheets Connection"):
+    try:
+        ws = get_worksheet()
+        ws.append_row(["TEST", datetime.now().isoformat()])
+        st.success("Test row written to Google Sheet ✅")
+    except Exception as e:
+        st.error(f"Google Sheets error: {e}")
 
 
 if st.session_state.phase == "disclaimer":
