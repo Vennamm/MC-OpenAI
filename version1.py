@@ -13,8 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.write("participant_id:", st.session_state.participant_id)
-st.write("url pid:", st.query_params.get("pid", None))
+
 
 
 AI_BANK_FILE = "mock_ai_bank.csv"
@@ -503,6 +502,9 @@ def all_rated():
 if not st.session_state.recovery_loaded:
     restore_state_from_events()
 
+st.write("participant_id:", st.session_state.participant_id)
+st.write("url pid:", st.query_params.get("pid", None))
+
 if st.session_state.phase == "disclaimer":
     st.markdown("## Disclaimer")
     st.markdown("""
@@ -576,14 +578,6 @@ elif st.session_state.phase == "demographics":
 
     st.stop()
 
-
-try:
-    debug_events = load_participant_events()
-    st.write("matched event rows:", len(debug_events))
-    if not debug_events.empty:
-        st.dataframe(debug_events.tail(10))
-except Exception as e:
-    st.write("event load error:", e)
 
 row = df.iloc[st.session_state.idx]
 qid = str(row['question_id'])
