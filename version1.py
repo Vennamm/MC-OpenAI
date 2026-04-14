@@ -203,7 +203,7 @@ def get_worksheet(tab_name: str):
 
 def append_dataframe_to_sheet(out_df: pd.DataFrame, tab_name: str):
     worksheet = get_worksheet(tab_name)
-    rows = out_df.fillna("").astype(str).values.tolist()
+    rows = out_df.fillna("").values.tolist()
     worksheet.append_rows(rows, value_input_option="RAW")
 
 def log_event(event_type: str, qid: str = "", event_data: dict | None = None):
