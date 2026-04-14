@@ -819,7 +819,9 @@ if st.session_state.phase == 'answer':
             st.session_state.phase = "rate_det"  # review
         st.rerun()
 
-    payload = {'answer': answer.strip(), 'pna_flag': 0, 'timestamp': datetime.now().isoformat()}
+
+    if submitted:        
+        payload = {'answer': answer.strip(), 'pna_flag': 0, 'timestamp': datetime.now().isoformat()}
 
         had_ai_exposure = (
             "ratings_det" in st.session_state.answers_json.get(qid, {}) or
