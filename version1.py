@@ -556,7 +556,7 @@ elif st.session_state.phase == "demographics":
             "demographic_comments": comments.strip(),
             "demographics_timestamp": datetime.now().isoformat(),
         }
-       log_event(
+        log_event(
             "demographics_submitted",
             event_data={
                 "age_group": age,
