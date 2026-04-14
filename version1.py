@@ -14,6 +14,8 @@ st.set_page_config(
 
 AI_BANK_FILE = "mock_ai_bank.csv"
 SHEET_NAME = "Participant Responses"
+EVENTS_TAB = "response_events"
+ANALYSIS_TAB = "analysis_ready"
 QUESTIONS_FILE = 'question_bank_2.csv'
 
 NUM_STOCH = 5
@@ -134,9 +136,18 @@ if missing_question_cols:
     st.stop()
 df['question_id'] = df['question_id'].astype(str)
 
-if 'participant_id' not in st.session_state:
-    st.session_state.participant_id = str(uuid.uuid4())
+query_params = st.query_params
 
+if 'participant_id' not in st.session_state:
+    existing_pid = query_params.get("pid", None)
+    if existing_pid:
+        st.session_state.participant_id = str(existing_pid)
+    else:
+        st.session_state.participant_id = str(uuid.uuid4())
+
+if 'last_logged_drafts' not in st.session_state:
+    st.session_state.last_logged_drafts = {}
+    
 if "stoch_choice" not in st.session_state:
     st.session_state.stoch_choice = {}
 
@@ -178,19 +189,54 @@ if 'gsheet_saved' not in st.session_state:
 
 ui_locked = st.session_state.locked or st.session_state.finish_clicked
 
-def get_worksheet():
+def get_spreadsheet():
     creds = Credentials.from_service_account_info(
         st.secrets["gcp_service_account"],
         scopes=SCOPES,
     )
     client = gspread.authorize(creds)
-    spreadsheet = client.open(SHEET_NAME)
-    return spreadsheet.sheet1
+    return client.open(SHEET_NAME)
 
-def append_dataframe_to_sheet(out_df: pd.DataFrame):
-    worksheet = get_worksheet()
+def get_worksheet(tab_name: str):
+    spreadsheet = get_spreadsheet()
+    return spreadsheet.worksheet(tab_name)
+
+def append_dataframe_to_sheet(out_df: pd.DataFrame, tab_name: str):
+    worksheet = get_worksheet(tab_name)
     rows = out_df.fillna("").astype(str).values.tolist()
     worksheet.append_rows(rows, value_input_option="RAW")
+
+def log_event(event_type: str, qid: str = "", event_data: dict | None = None):
+    if event_data is None:
+        event_data = {}
+
+    event_row = {
+        "event_timestamp": datetime.utcnow().isoformat(),
+        "participant_id": st.session_state.participant_id,
+        "phase": st.session_state.get("phase", ""),
+        "question_id": qid,
+        "event_type": event_type,
+        "event_data": str(event_data),
+    }
+
+    event_df = pd.DataFrame([event_row])
+    append_dataframe_to_sheet(event_df, EVENTS_TAB)
+
+def log_draft_if_changed(qid: str):
+    current_draft = st.session_state.drafts.get(qid, "").strip()
+    submitted_answer = st.session_state.answers.get(qid, {}).get("answer", "").strip()
+    last_logged_draft = st.session_state.last_logged_drafts.get(qid, "").strip()
+
+    if current_draft and current_draft != submitted_answer and current_draft != last_logged_draft:
+        log_event(
+            "draft_saved",
+            qid=qid,
+            event_data={
+                "draft_text": current_draft,
+                "draft_length": len(current_draft),
+            },
+        )
+        st.session_state.last_logged_drafts[qid] = current_draft
 
 def get_ai_from_bank(qid: str, variant_type: str, variant_index: int):
     subset = ai_bank[
@@ -312,6 +358,8 @@ Please read this before continuing.
 
     if st.button("Continue", type="primary", disabled=not consent):
         st.session_state.consent_given = True
+        st.query_params["pid"] = st.session_state.participant_id
+        log_event("disclaimer_accepted")
         st.session_state.phase = "demographics"
         st.rerun()
 
@@ -352,6 +400,15 @@ elif st.session_state.phase == "demographics":
             "demographic_comments": comments.strip(),
             "demographics_timestamp": datetime.now().isoformat(),
         }
+        log_event(
+            "demographics_submitted",
+            event_data={
+                "age_group": age,
+                "gender": gender,
+                "korean_familiarity": korean_familiarity,
+                "nationality_background": nationality.strip(),
+            },
+        )
         st.session_state.phase = "answer"
         st.rerun()
 
@@ -502,6 +559,15 @@ for i, row in df.iterrows():
         use_container_width=True,
         type=btn_type
     ):
+        log_draft_if_changed(qid)
+        log_event(
+            "sidebar_navigation",
+            qid=qid_side,
+            event_data={
+                "target_index": i,
+                "button_label": btn_label,
+            },
+        )
         st.session_state.phase = "answer"
         go_to_index(i)
 
@@ -595,6 +661,7 @@ if st.session_state.phase == 'answer':
         )
     
     if go_to_ratings:
+        log_draft_if_changed(qid)
         resp = st.session_state.answers_json.get(qid, {})
         if "ratings_det" not in resp:
             st.session_state.phase = "rate_det"
@@ -609,6 +676,15 @@ if st.session_state.phase == 'answer':
         st.session_state.answers[qid] = payload
         st.session_state.answers_json[str(qid)] = payload
         st.session_state.drafts[qid] = ''
+    
+        log_event(
+            "answer_submitted",
+            qid=qid,
+            event_data={
+                "answer": answer.strip(),
+                "pna_flag": 0,
+            },
+        )
         
         st.session_state.phase = 'rate_det'
         st.rerun()
@@ -618,7 +694,15 @@ if st.session_state.phase == 'answer':
         st.session_state.answers[qid] = payload
         st.session_state.answers_json[str(qid)] = payload
         st.session_state.drafts[qid] = ''
-
+    
+        log_event(
+            "answer_skipped",
+            qid=qid,
+            event_data={
+                "pna_flag": 1,
+            },
+        )
+    
         st.session_state.phase = 'rate_det'
         st.rerun()
 
@@ -702,7 +786,17 @@ elif st.session_state.phase == "rate_det":
                 "rated_timestamp": datetime.utcnow().isoformat(),
             }
 
-            # move to stochastic rating page next
+            log_event(
+                "det_ratings_saved",
+                qid=qid,
+                event_data={
+                    "correctness": r_correctness,
+                    "cultural_sensitivity": r_cultural,
+                    "stereotypes": r_stereotypes,
+                    "nuance": r_nuance,
+                    "overall": r_overall,
+                },
+            )
             st.session_state.phase = "rate_stoch"
             st.rerun()
 
@@ -788,6 +882,19 @@ elif st.session_state.phase == "rate_stoch":
                 "rated_timestamp": datetime.utcnow().isoformat(),
             }
 
+            log_event(
+                "stoch_ratings_saved",
+                qid=qid,
+                event_data={
+                    "chosen_index": chosen_idx,
+                    "correctness": r_correctness,
+                    "cultural_sensitivity": r_cultural,
+                    "stereotypes": r_stereotypes,
+                    "nuance": r_nuance,
+                    "overall": r_overall,
+                },
+            )
+
             st.session_state.phase = "answer"
             if st.session_state.idx < len(df) - 1:
                 st.session_state.idx += 1
@@ -825,6 +932,15 @@ with col3:
         disabled=(st.session_state.idx == 0 or ui_locked),
         use_container_width=True
     ):
+        log_draft_if_changed(qid)
+        log_event(
+            "previous_question",
+            qid=qid,
+            event_data={
+                "from_index": st.session_state.idx,
+                "to_index": st.session_state.idx - 1,
+            },
+        )
         st.session_state.phase = "answer"
         go_to_index(st.session_state.idx - 1)
 
@@ -834,17 +950,36 @@ with col4:
         disabled=(st.session_state.idx == len(df) - 1 or ui_locked),
         use_container_width=True
     ):
+        log_draft_if_changed(qid)
+        log_event(
+            "next_question",
+            qid=qid,
+            event_data={
+                "from_index": st.session_state.idx,
+                "to_index": st.session_state.idx + 1,
+            },
+        )
         st.session_state.phase = "answer"
         go_to_index(st.session_state.idx + 1)
 
 with col5:
     all_done = all_rated() and all_answered()
+    current_answered_count = len(st.session_state.answers_json)
+
     if st.button(
         "Finish Survey",
         disabled=(not all_done or ui_locked),
         type="primary",
         use_container_width=True
     ):
+        log_event(
+            "survey_finished_clicked",
+            qid=qid,
+            event_data={
+                "all_done": all_done,
+                "answered_count": current_answered_count,
+            },
+        )
         st.session_state.finish_clicked = True
         st.session_state.locked = True
         st.rerun()
@@ -953,7 +1088,14 @@ if all_done and st.session_state.finish_clicked:
 
     if not st.session_state.gsheet_saved:
         try:
-            append_dataframe_to_sheet(out_df)
+            append_dataframe_to_sheet(out_df, ANALYSIS_TAB)
+            log_event(
+                "analysis_ready_saved",
+                event_data={
+                    "rows_saved": len(out_df),
+                    "tab_name": ANALYSIS_TAB,
+                },
+            )
             st.session_state.gsheet_saved = True
             st.success("Responses saved to Google Sheets.")
         except Exception as e:
