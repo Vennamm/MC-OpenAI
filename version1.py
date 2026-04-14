@@ -258,6 +258,10 @@ def parse_event_data(raw):
 
 def restore_state_from_events():
     events_df = load_participant_events()
+    st.write("Recovery debug - matched rows:", len(events_df))
+    if not events_df.empty:
+        st.write("Recovery debug - event types:", events_df["event_type"].tolist())
+        st.write(events_df.tail(10))
     if events_df.empty:
         st.session_state.recovery_loaded = True
         return
