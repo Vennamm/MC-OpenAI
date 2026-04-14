@@ -1,3 +1,5 @@
 streamlit
 pandas
-numpY
+numpy
+gspread
+google-auth
