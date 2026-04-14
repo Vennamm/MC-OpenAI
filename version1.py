@@ -498,6 +498,9 @@ def all_rated():
         if "ratings_det" not in resp or "ratings_stoch" not in resp:
             return False
     return True
+    
+if st.session_state.recovery_loaded:
+    st.info("Your previous responses have been restored. You can continue where you left off.")
 
 if not st.session_state.recovery_loaded:
     restore_state_from_events()
