@@ -6,6 +6,7 @@ import uuid
 import ast
 from datetime import datetime
 import gspread
+import hashlib
 from google.oauth2.service_account import Credentials
 
 st.set_page_config(
@@ -151,32 +152,39 @@ if 'participant_id' not in st.session_state:
     else:
         st.session_state.participant_id = str(uuid.uuid4())
 
-MODELS = ["gpt-4.1-mini", "gpt-5-mini", "gpt-5.4-mini"]
+MODELS = [
+    "gpt-4.1-mini",
+    "gpt-5.4-mini"
+]
 
 if "question_model_map" not in st.session_state:
-    rng = np.random.default_rng(
-        abs(hash(st.session_state.participant_id)) % (2**32)
-    )
+
+    stable_seed = int(
+        hashlib.md5(
+            st.session_state.participant_id.encode()
+        ).hexdigest(),
+        16
+    ) % (2**32)
+
+    rng = np.random.default_rng(stable_seed)
 
     qids = df["question_id"].astype(str).tolist()
     shuffled_qids = qids.copy()
     rng.shuffle(shuffled_qids)
 
-    # 20 questions split as 7, 7, 6 across 3 models
-    base_counts = [7, 7, 6]
-    rng.shuffle(base_counts)
+    # 20 questions -> 10 per model
+    split_point = len(shuffled_qids) // 2
 
-    model_order = MODELS.copy()
-    rng.shuffle(model_order)
+    model_a_qids = shuffled_qids[:split_point]
+    model_b_qids = shuffled_qids[split_point:]
 
     question_model_map = {}
-    start = 0
 
-    for model_name, count in zip(model_order, base_counts):
-        assigned_qids = shuffled_qids[start:start + count]
-        for qid_assigned in assigned_qids:
-            question_model_map[qid_assigned] = model_name
-        start += count
+    for qid_assigned in model_a_qids:
+        question_model_map[qid_assigned] = MODELS[0]
+
+    for qid_assigned in model_b_qids:
+        question_model_map[qid_assigned] = MODELS[1]
 
     st.session_state.question_model_map = question_model_map
 
