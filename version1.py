@@ -142,6 +142,35 @@ df['question_id'] = df['question_id'].astype(str)
 
 query_params = st.query_params
 
+MODELS = ["gpt-4.1-mini", "gpt-5-mini", "gpt-5.4-mini"]
+
+if "question_model_map" not in st.session_state:
+    rng = np.random.default_rng(
+        abs(hash(st.session_state.participant_id)) % (2**32)
+    )
+
+    qids = df["question_id"].astype(str).tolist()
+    shuffled_qids = qids.copy()
+    rng.shuffle(shuffled_qids)
+
+    # 20 questions split as 7, 7, 6 across 3 models
+    base_counts = [7, 7, 6]
+    rng.shuffle(base_counts)
+
+    model_order = MODELS.copy()
+    rng.shuffle(model_order)
+
+    question_model_map = {}
+    start = 0
+
+    for model_name, count in zip(model_order, base_counts):
+        assigned_qids = shuffled_qids[start:start + count]
+        for qid_assigned in assigned_qids:
+            question_model_map[qid_assigned] = model_name
+        start += count
+
+    st.session_state.question_model_map = question_model_map
+
 if 'participant_id' not in st.session_state:
     existing_pid = query_params.get("pid", None)
     if existing_pid:
@@ -394,17 +423,28 @@ def restore_state_from_events():
 
 
 
-def get_ai_from_bank(qid: str, variant_type: str, variant_index: int):
+def get_ai_from_bank(qid: str, variant_type: str, variant_index: int, model_name: str | None = None):
+    if model_name is None:
+        model_name = st.session_state.question_model_map.get(qid)
+
     subset = ai_bank[
         (ai_bank["question_id"] == qid) &
         (ai_bank["variant_type"] == variant_type) &
-        (ai_bank["variant_index"] == variant_index)
+        (ai_bank["variant_index"] == variant_index) &
+        (ai_bank["model"] == model_name)
     ]
-    if subset.empty:
-        return {"answer": "", "temperature": None, "model": None, "run_id": None, "generated_at_utc": None, "error": "missing_row"}
 
-    row = subset.iloc[0].to_dict()
-    return row
+    if subset.empty:
+        return {
+            "answer": "",
+            "temperature": None,
+            "model": model_name,
+            "run_id": None,
+            "generated_at_utc": None,
+            "error": "missing_row"
+        }
+
+    return subset.iloc[0].to_dict()
 
 def get_status(qid):
     answered = qid in st.session_state.answers_json
@@ -581,6 +621,8 @@ elif st.session_state.phase == "demographics":
 
 row = df.iloc[st.session_state.idx]
 qid = str(row['question_id'])
+assigned_model = st.session_state.question_model_map.get(qid)
+
 if st.session_state.active_qid != qid:
     st.session_state.active_qid = qid
 question = str(row.get("question", "")).strip().replace('"', '').replace("'", "")
@@ -1053,6 +1095,7 @@ elif st.session_state.phase == "rate_stoch":
                 "question_fully_rated",
                 qid=qid,
                 event_data={
+                    "assigned_model": assigned_model,
                     "chosen_index": chosen_idx,
                     "det_correctness": det_payload.get("correctness"),
                     "det_cultural_sensitivity": det_payload.get("cultural_sensitivity"),
@@ -1238,6 +1281,9 @@ if all_done and st.session_state.finish_clicked:
             "stoch_rating_nuance": rs.get("nuance", None),
             "stoch_rating_overall": rs.get("overall", None),
             "stoch_rated_timestamp": rs.get("rated_timestamp", None),
+
+            # Model
+            "assigned_model": st.session_state.question_model_map.get(qid_iter)
         })
     out_df = pd.DataFrame(rows)
     csv_bytes = out_df.to_csv(index=False).encode("utf-8")
