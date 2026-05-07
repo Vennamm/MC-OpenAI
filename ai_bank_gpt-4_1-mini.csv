@@ -1,0 +1,601 @@
+﻿run_id,generated_at_utc,question_id,topic,question,translation,variant_type,variant_index,temperature,model,answer,error
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,1,Addressing Elders,"""How should a young employee greet the CEO of their company if they meet in the hallway? Why is this specific greeting used?""","""젊은 직원이 복도에서 만난다면 회사 CEO에게 어떻게 인사해야 하나요? 왜 이런 인사가 사용되나요?""",det,0,0.0,gpt-4.1-mini,"English:
+A young employee should greet the CEO with a respectful bow and say ""Annyeonghaseyo"" or ""Annyeong hashimnikka"" depending on the formality. This greeting shows respect and acknowledges the CEO's higher status, which is important in Korean hierarchical culture.
+
+Korean:
+젊은 직원은 복도에서 CEO를 만나면 공손하게 고개를 숙이고 ""안녕하세요"" 또는 더 격식을 차려 ""안녕하십니까""라고 인사해야 합니다. 이는 한국의 위계질서 문화에서 상사의 높은 지위를 존중하는 표현입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,1,Addressing Elders,"""How should a young employee greet the CEO of their company if they meet in the hallway? Why is this specific greeting used?""","""젊은 직원이 복도에서 만난다면 회사 CEO에게 어떻게 인사해야 하나요? 왜 이런 인사가 사용되나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+A young employee should greet the CEO with a respectful bow and say ""Annyeonghaseyo"" or a more formal greeting like ""Annyeong hashimnikka."" This specific greeting shows respect and acknowledges the hierarchical relationship, which is very important in Korean workplace culture.
+
+Korean:
+젊은 직원이 회사 CEO를 만나면 공손하게 인사하며 ""안녕하세요"" 또는 더 격식 있는 ""안녕하십니까""라고 인사해야 합니다. 이런 인사는 상하 관계를 존중하는 한국 직장 문화에서 매우 중요합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,1,Addressing Elders,"""How should a young employee greet the CEO of their company if they meet in the hallway? Why is this specific greeting used?""","""젊은 직원이 복도에서 만난다면 회사 CEO에게 어떻게 인사해야 하나요? 왜 이런 인사가 사용되나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+A young employee should greet the CEO with a polite bow and say ""Annyeonghaseyo"" or more formally, ""Annyeonghashimnikka."" This specific greeting shows respect and acknowledges the senior's higher status in the company, which is important in Korean workplace culture.
+
+Korean:
+젊은 직원은 회사 CEO를 만나면 공손히 인사하며 정중하게 ""안녕하세요"" 또는 더 격식 있게 ""안녕하십니까""라고 말해야 합니다. 이는 윗사람에 대한 존경과 존중을 나타내기 때문입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,1,Addressing Elders,"""How should a young employee greet the CEO of their company if they meet in the hallway? Why is this specific greeting used?""","""젊은 직원이 복도에서 만난다면 회사 CEO에게 어떻게 인사해야 하나요? 왜 이런 인사가 사용되나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+A young employee should greet the CEO with a slight bow and say ""Annyeonghaseyo"" or ""Annyeong hashimnikka"" in a respectful tone. This greeting shows respect and acknowledges the CEO's senior position, which is very important in Korean culture where hierarchy and politeness are valued.
+
+Korean:
+젊은 직원은 복도에서 CEO를 만나면 가볍게 고개를 숙이고 존댓말로 ""안녕하세요"" 또는 ""안녕하십니까""라고 인사해야 합니다. 이는 상하 관계와 존경을 중시하는 한국 문화에서 예의와 존중을 나타내기 때문입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,1,Addressing Elders,"""How should a young employee greet the CEO of their company if they meet in the hallway? Why is this specific greeting used?""","""젊은 직원이 복도에서 만난다면 회사 CEO에게 어떻게 인사해야 하나요? 왜 이런 인사가 사용되나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+A young employee should greet the CEO with a slight bow and say ""Annyeong hasimnikka"" or ""Annyeong haseyo"" depending on the formality. This respectful greeting is used to show deference and respect, which is very important in Korean workplace culture.
+
+Korean:
+젊은 직원은 CEO를 만나면 고개 숙여 '안녕하십니까' 또는 '안녕하세요'라고 인사해야 합니다. 이는 존경과 예의를 표현하는 것으로, 한국 직장 문화에서 매우 중요합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,1,Addressing Elders,"""How should a young employee greet the CEO of their company if they meet in the hallway? Why is this specific greeting used?""","""젊은 직원이 복도에서 만난다면 회사 CEO에게 어떻게 인사해야 하나요? 왜 이런 인사가 사용되나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+A young employee should greet the CEO with a respectful bow and say ""Annyeonghaseyo, CEO-nim"" when meeting in the hallway. This specific greeting shows respect and acknowledges the CEO's higher status in the company hierarchy, which is very important in Korean workplace culture.
+
+Korean:
+젊은 직원은 복도에서 CEO를 만나면 공손하게 고개 숙여 인사하고 ""안녕하세요, CEO님""이라고 말해야 합니다. 이는 존경을 표현하고 회사 내 위계질서를 반영하는 중요한 인사법입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,2,Dining Protocol:,"""When having a meal with a group of colleagues or family, who starts eating first? What does this signify?""","""동료나 가족과 함께 식사할 때 누가 먼저 식사를 시작하나요? 이것은 무엇을 의미하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, the eldest or highest-ranking person usually starts eating first, and others wait until they begin. This signifies respect and acknowledges the seniority or status of that person, reflecting the importance of hierarchy and politeness in Korean dining etiquette.
+
+Korean:
+한국 문화에서는 보통 연장자나 직급이 높은 사람이 먼저 식사를 시작하고, 다른 사람들은 그 사람이 시작할 때까지 기다립니다. 이는 존경을 나타내며, 한국 식사 예절에서 위계와 예의를 중요하게 여긴다는 의미입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,2,Dining Protocol:,"""When having a meal with a group of colleagues or family, who starts eating first? What does this signify?""","""동료나 가족과 함께 식사할 때 누가 먼저 식사를 시작하나요? 이것은 무엇을 의미하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, the eldest or highest-ranking person usually starts eating first. This signifies respect and hierarchy, and others begin after the senior says ""jal meokk겠습니다"" or starts eating.
+
+Korean:
+한국 문화에서는 보통 연장자나 직급이 높은 사람이 먼저 식사를 시작합니다. 이는 존경과 위계를 의미하며, 어른이 ""잘 먹겠습니다""라고 하거나 식사를 시작하면 다른 사람이 따라 식사합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,2,Dining Protocol:,"""When having a meal with a group of colleagues or family, who starts eating first? What does this signify?""","""동료나 가족과 함께 식사할 때 누가 먼저 식사를 시작하나요? 이것은 무엇을 의미하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, the eldest or the highest-ranking person usually starts eating first. This act, called ""eumsik seutartgi,"" shows respect for age and status, and others wait until the senior begins before eating.
+
+Korean:
+한국 문화에서는 나이가 많거나 직급이 높은 사람이 먼저 식사를 시작합니다. 이는 연장자와 지위에 대한 존경을 나타내며, 다른 사람들은 어르신이 시작할 때까지 기다립니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,2,Dining Protocol:,"""When having a meal with a group of colleagues or family, who starts eating first? What does this signify?""","""동료나 가족과 함께 식사할 때 누가 먼저 식사를 시작하나요? 이것은 무엇을 의미하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korean culture, the eldest or most senior person usually starts eating first. This act shows respect and acknowledges hierarchy, and others wait to begin together with a phrase like ""jal meokkesseumnida"" before eating.
+
+Korean:
+한국 문화에서는 나이가 가장 많거나 직급이 높은 사람이 먼저 식사를 시작합니다. 이는 존경과 위계를 나타내며, 다른 사람들은 ""잘 먹겠습니다""라는 말을 한 후 함께 식사를 시작합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,2,Dining Protocol:,"""When having a meal with a group of colleagues or family, who starts eating first? What does this signify?""","""동료나 가족과 함께 식사할 때 누가 먼저 식사를 시작하나요? 이것은 무엇을 의미하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean dining culture, the eldest or highest-ranking person usually starts eating first, which signifies respect and hierarchy. Others wait for this person to begin before saying ""Jal meokkesseumnida"" and starting their meal.
+
+Korean:
+한국 식사 문화에서는 보통 연장자나 직급이 높은 사람이 먼저 식사를 시작하며, 이는 존경과 위계를 나타냅니다. 다른 사람들은 그 사람이 ""잘 먹겠습니다""라고 말하고 시작할 때까지 기다립니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,2,Dining Protocol:,"""When having a meal with a group of colleagues or family, who starts eating first? What does this signify?""","""동료나 가족과 함께 식사할 때 누가 먼저 식사를 시작하나요? 이것은 무엇을 의미하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean dining culture, the eldest or highest-ranking person usually starts eating first, signifying respect and hierarchy. Others wait and begin only after this person says ""Jalm meokkesseumnida,"" showing politeness.
+
+Korean:
+한국에서는 식사할 때 어른이나 직위가 높은 사람이 먼저 식사를 시작하며, 이는 존경과 위계를 나타냅니다. 다른 사람들은 그 사람이 ""잘 먹겠습니다""라고 말한 후에 식사를 시작합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,3,Pouring Drinks,"""If you are drinking alcohol with an elder or a superior, what is the proper etiquette for pouring and receiving the drink?""","""어르신이나 상사와 함께 술을 마시고 있다면, 술을 따르고 받는 올바른 예절은 무엇입니까?""",det,0,0.0,gpt-4.1-mini,"English:
+When drinking with an elder or superior, you should pour their drink with both hands or support your pouring hand with the other hand as a sign of respect. When receiving a drink, hold your glass with both hands and slightly turn your head away from them before taking a sip, showing humility and respect.
+
+Korean:
+어르신이나 상사와 술을 마실 때는 두 손으로 술을 따라드리거나 한 손으로 따르면서 다른 손으로 받치는 것이 예의입니다. 술을 받을 때도 두 손으로 잔을 잡고 고개를 살짝 돌려서 마시는 것이 존경을 나타내는 방법입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,3,Pouring Drinks,"""If you are drinking alcohol with an elder or a superior, what is the proper etiquette for pouring and receiving the drink?""","""어르신이나 상사와 함께 술을 마시고 있다면, 술을 따르고 받는 올바른 예절은 무엇입니까?""",stoch,1,1.0,gpt-4.1-mini,"English:
+When drinking with an elder or superior, you should pour their drink with both hands as a sign of respect. When receiving a drink from them, hold your glass with both hands and slightly bow your head to show gratitude. It is also common to turn your face away while drinking to avoid direct eye contact.
+
+Korean:
+어르신이나 상사에게 술을 따를 때는 두 손으로 공손히 따르고, 받을 때도 두 손으로 잔을 받으며 고개를 살짝 숙여 감사함을 표현합니다. 술을 마실 때에는 직접 눈을 마주치지 않도록 고개를 돌리는 것도 예의입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,3,Pouring Drinks,"""If you are drinking alcohol with an elder or a superior, what is the proper etiquette for pouring and receiving the drink?""","""어르신이나 상사와 함께 술을 마시고 있다면, 술을 따르고 받는 올바른 예절은 무엇입니까?""",stoch,2,1.0,gpt-4.1-mini,"English:
+When drinking with an elder or superior, pour their drink with both hands or support one hand with the other while pouring. When receiving a drink, hold your glass with both hands as a sign of respect. It is also polite to slightly turn your head away and not drink directly in front of the elder’s face.
+
+Korean:
+어르신이나 상사에게 술을 따를 때는 두 손으로 술잔을 받거나 한 손을 받쳐서 따릅니다. 술을 받을 때도 두 손으로 잔을 들여 예의를 표해야 합니다. 또한 어르신 앞에서는 고개를 약간 돌리고 직접 눈앞에서 마시지 않는 것이 예의입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,3,Pouring Drinks,"""If you are drinking alcohol with an elder or a superior, what is the proper etiquette for pouring and receiving the drink?""","""어르신이나 상사와 함께 술을 마시고 있다면, 술을 따르고 받는 올바른 예절은 무엇입니까?""",stoch,3,1.0,gpt-4.1-mini,"English:
+When drinking with an elder or superior in Korea, always pour drinks with both hands or with one hand supported by the other, known as using ""two hands."" When receiving a drink, turn your head slightly to the side and hold the glass with both hands as a sign of respect.
+
+Korean:
+어르신이나 상사와 술을 마실 때는 두 손으로 공손히 술을 따라야 하고, 술을 받을 때는 고개를 약간 돌리고 잔을 두 손으로 받아야 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,3,Pouring Drinks,"""If you are drinking alcohol with an elder or a superior, what is the proper etiquette for pouring and receiving the drink?""","""어르신이나 상사와 함께 술을 마시고 있다면, 술을 따르고 받는 올바른 예절은 무엇입니까?""",stoch,4,1.0,gpt-4.1-mini,"English:
+When drinking with an elder or superior, always pour drinks with both hands as a sign of respect. When receiving a drink, hold the glass with one hand and support your arm with the other. It is also polite to turn slightly away from the elder or superior while drinking and say ""geonbae.""
+
+Korean:
+어르신이나 상사와 술을 마실 때는 두 손으로 잔을 잡고 술을 따라야 합니다. 술 받을 때도 한 손으로 잔을 받고 다른 손으로 팔을 받쳐야 예의에 맞습니다. 마실 때는 살짝 고개를 돌리고 ""건배""라고 하는 것이 예의입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,3,Pouring Drinks,"""If you are drinking alcohol with an elder or a superior, what is the proper etiquette for pouring and receiving the drink?""","""어르신이나 상사와 함께 술을 마시고 있다면, 술을 따르고 받는 올바른 예절은 무엇입니까?""",stoch,5,1.0,gpt-4.1-mini,"English:
+When drinking with an elder or superior, you should pour drinks with two hands or support your pouring hand with the other hand as a sign of respect. When receiving a drink, hold your glass with two hands and slightly turn your head away from the elder or superior before drinking, showing humility and respect.
+
+Korean:
+어르신이나 상사와 술을 마실 때는 존경의 표시로 두 손 또는 한 손을 받쳐서 술을 따라야 합니다. 술을 받을 때는 두 손으로 잔을 잡고, 술을 마시기 전에 고개를 약간 돌려 겸손과 존경을 표현합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,4,Eye Contact,"""During a serious conversation with a superior, how much eye contact is appropriate? What does maintaining (or avoiding) eye contact mean?""","""상사와 진지한 대화를 나눌 때 눈을 마주치는 정도는 어느 정도인가요? 눈을 마주치는 것을 유지하거나 피하는 것은 무엇을 의미하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+During a serious conversation with a superior in Korea, moderate eye contact is appropriate. Maintaining eye contact shows respect and attentiveness, but staring too long can be seen as disrespectful or challenging. Avoiding eye contact may indicate deference or discomfort, reflecting the hierarchical nature of Korean culture and the concept of ""nunchi.""
+
+Korean:
+상사와 진지한 대화 시 적당한 눈맞춤이 중요합니다. 눈을 마주치는 것은 존중과 집중을 나타내지만, 너무 오래 쳐다보면 무례하거나 도전적으로 보일 수 있습니다. 눈을 피하는 것은 겸손함이나 불편함을 나타내며, 한국의 위계질서와 눈치 문화와 관련이 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,4,Eye Contact,"""During a serious conversation with a superior, how much eye contact is appropriate? What does maintaining (or avoiding) eye contact mean?""","""상사와 진지한 대화를 나눌 때 눈을 마주치는 정도는 어느 정도인가요? 눈을 마주치는 것을 유지하거나 피하는 것은 무엇을 의미하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, during a serious conversation with a superior, moderate eye contact is appropriate. Too much eye contact may be seen as disrespectful or challenging, while avoiding eye contact entirely can be perceived as showing lack of confidence or sincerity. Maintaining calm eye contact shows jeongneung (respect) and attentiveness.
+
+Korean:
+한국 문화에서 상사와 진지한 대화 시 적당한 눈 맞춤이 중요합니다. 지나친 눈 맞춤은 무례하거나 도전적으로 보일 수 있고, 눈을 완전히 피하면 자신감이나 진정성이 부족해 보일 수 있습니다. 차분한 눈 맞춤은 존경과 집중을 나타냅니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,4,Eye Contact,"""During a serious conversation with a superior, how much eye contact is appropriate? What does maintaining (or avoiding) eye contact mean?""","""상사와 진지한 대화를 나눌 때 눈을 마주치는 정도는 어느 정도인가요? 눈을 마주치는 것을 유지하거나 피하는 것은 무엇을 의미하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, during a serious conversation with a superior, maintaining gentle and respectful eye contact is appropriate but not too intense. Avoiding direct eye contact can show respect and humility, as staring may be seen as challenging or rude. Proper eye contact reflects a balance of jeong and respect.
+
+Korean:
+한국 문화에서는 상사와 진지한 대화 시 너무 강한 눈 맞춤은 피하고 부드럽고 존중하는 눈 맞춤을 하는 것이 적절합니다. 눈을 피하는 것은 겸손과 존경을 나타내며 지나친 시선은 도전적으로 보일 수 있습니다. 적절한 눈 맞춤은 정과 존경의 균형을 의미합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,4,Eye Contact,"""During a serious conversation with a superior, how much eye contact is appropriate? What does maintaining (or avoiding) eye contact mean?""","""상사와 진지한 대화를 나눌 때 눈을 마주치는 정도는 어느 정도인가요? 눈을 마주치는 것을 유지하거나 피하는 것은 무엇을 의미하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+During a serious conversation with a superior in Korea, moderate eye contact is appropriate. Maintaining eye contact shows respect and attentiveness, but staring too intensely can be seen as disrespectful or challenging authority. Avoiding eye contact may indicate humility or deference, but too little can seem evasive or disrespectful.
+
+Korean:
+한국에서 상사와 진지한 대화 시 적당한 눈맞춤이 중요합니다. 눈을 마주치는 것은 존경과 집중을 의미하지만 너무 오래 응시하면 무례하게 보일 수 있습니다. 눈을 피하는 것은 겸손이나 경의를 나타내지만 너무 적으면 불성실해 보일 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,4,Eye Contact,"""During a serious conversation with a superior, how much eye contact is appropriate? What does maintaining (or avoiding) eye contact mean?""","""상사와 진지한 대화를 나눌 때 눈을 마주치는 정도는 어느 정도인가요? 눈을 마주치는 것을 유지하거나 피하는 것은 무엇을 의미하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+During a serious conversation with a superior in Korea, moderate eye contact is appropriate; staring too long can be seen as disrespectful or confrontational. Maintaining eye contact politely shows attentiveness and respect, while avoiding eye contact may imply deference or discomfort (called ""cheonmang"" in some contexts).
+
+Korean:
+한국에서 상사와 진지한 대화 시 적당한 눈맞춤이 필요하며, 지나치게 오래 바라보는 것은 무례하거나 대립적으로 보일 수 있습니다. 눈을 맞추는 것은 관심과 존경을 나타내고, 피하는 것은 겸손하거나 불편함을 의미할 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,4,Eye Contact,"""During a serious conversation with a superior, how much eye contact is appropriate? What does maintaining (or avoiding) eye contact mean?""","""상사와 진지한 대화를 나눌 때 눈을 마주치는 정도는 어느 정도인가요? 눈을 마주치는 것을 유지하거나 피하는 것은 무엇을 의미하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+During a serious conversation with a superior in Korea, moderate eye contact is appropriate. Maintaining ""nunmajuchigi"" shows respect and attentiveness, but staring too long can be seen as rude or challenging authority. Avoiding eye contact completely might imply nervousness or lack of respect.
+
+Korean:
+상사와 진지한 대화 시 적당한 눈 맞춤이 필요합니다. 눈맞추기는 존경과 집중을 나타내지만, 너무 오래 쳐다보는 것은 무례하거나 권위에 도전하는 것으로 보일 수 있습니다. 완전히 눈을 피하는 것은 긴장하거나 존중이 부족하다는 뜻일 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,5,Public Behavior,"""Is it acceptable to blow your nose loudly while sitting at a dinner table? How is this action perceived by others?""","""저녁 식탁에 앉아 코를 크게 푸는 것이 허용되나요? 다른 사람들은 이 행동을 어떻게 인식하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+No, it is not acceptable to blow your nose loudly at the dinner table in Korea. This action is considered rude and impolite, as it disrupts the dining atmosphere and shows a lack of consideration for others. Koreans value quiet and respectful behavior during meals.
+
+Korean:
+한국에서는 저녁 식탁에서 코를 크게 푸는 것이 허용되지 않습니다. 이는 무례하고 예의에 어긋나는 행동으로, 식사 분위기를 해치고 다른 사람에 대한 배려가 부족하다고 여겨집니다. 식사 중에는 조용하고 공손한 태도를 중요하게 생각합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,5,Public Behavior,"""Is it acceptable to blow your nose loudly while sitting at a dinner table? How is this action perceived by others?""","""저녁 식탁에 앉아 코를 크게 푸는 것이 허용되나요? 다른 사람들은 이 행동을 어떻게 인식하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+No, blowing your nose loudly at the dinner table is considered impolite in Korean culture. It is seen as poor manners and can make others feel uncomfortable. Koreans prefer to excuse themselves if they need to blow their nose, showing respect for others during the meal.
+
+Korean:
+저녁 식탁에서 코를 크게 푸는 것은 한국 문화에서는 예의에 어긋납니다. 다른 사람들에게 불편함을 줄 수 있어서, 코를 풀 필요가 있으면 자리를 잠시 피하는 것이 예의입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,5,Public Behavior,"""Is it acceptable to blow your nose loudly while sitting at a dinner table? How is this action perceived by others?""","""저녁 식탁에 앉아 코를 크게 푸는 것이 허용되나요? 다른 사람들은 이 행동을 어떻게 인식하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+Blowing your nose loudly at the dinner table is considered rude and impolite in Korea. It is seen as a lack of manners and can make others feel uncomfortable during a meal. Koreans emphasize clean and quiet behavior, especially while eating.
+
+Korean:
+저녁 식탁에서 크게 코를 푸는 것은 무례하고 예의에 어긋나는 행동으로 여겨집니다. 다른 사람들에게 불편함을 줄 수 있어 조용하고 깔끔한 식사 예절을 중요하게 생각합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,5,Public Behavior,"""Is it acceptable to blow your nose loudly while sitting at a dinner table? How is this action perceived by others?""","""저녁 식탁에 앉아 코를 크게 푸는 것이 허용되나요? 다른 사람들은 이 행동을 어떻게 인식하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+Blowing your nose loudly at the dinner table is considered impolite in Korean culture. People generally expect quiet and discreet behavior during meals, so doing this may be seen as rude or inconsiderate, disrupting the harmony of the dining experience.
+
+Korean:
+저녁 식탁에서 코를 크게 푸는 것은 한국 문화에서 예의에 어긋나는 행동으로 여겨집니다. 식사 중에는 조용하고 신중한 태도를 기대하기 때문에 이런 행동은 무례하거나 배려심 없다고 인식됩니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,5,Public Behavior,"""Is it acceptable to blow your nose loudly while sitting at a dinner table? How is this action perceived by others?""","""저녁 식탁에 앉아 코를 크게 푸는 것이 허용되나요? 다른 사람들은 이 행동을 어떻게 인식하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+Blowing your nose loudly at the dinner table is considered rude and impolite in Korean culture. People might see it as bad manners or disrespectful to others eating together, so it is better to excuse yourself and do it privately outside the dining area.
+
+Korean:
+저녁 식탁에서 크게 코를 푸는 것은 한국에서 무례하고 예의에 어긋나는 행동으로 여겨집니다. 함께 식사하는 사람들에게 실례가 될 수 있어 자리를 피해서 조용한 곳에서 하는 것이 좋습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,5,Public Behavior,"""Is it acceptable to blow your nose loudly while sitting at a dinner table? How is this action perceived by others?""","""저녁 식탁에 앉아 코를 크게 푸는 것이 허용되나요? 다른 사람들은 이 행동을 어떻게 인식하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+Blowing your nose loudly at the dinner table is generally considered rude and impolite in Korean culture. People may perceive this action as disrespectful or unhygienic, so it is better to excuse yourself and blow your nose privately instead.
+
+Korean:
+저녁 식사 자리에서 코를 크게 푸는 것은 보통 무례하고 예의에 어긋난 행동으로 여겨집니다. 다른 사람들은 이를 불쾌하거나 위생에 신경 쓰지 않는 것으로 볼 수 있어, 자리를 잠시 떠나 조용히 코를 푸는 것이 좋습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,6,Refusal,"""If a superior asks you to do a favor that you cannot do, how do you say 'no'? Do you use a direct 'no' or an indirect method?""","""상사가 할 수 없는 부탁을 들어달라고 하면 '안 된다'고 어떻게 말하나요? 직접적인 '안 된다' 또는 간접적인 방법을 사용하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, it is more common to use an indirect method to say no to a superior, such as saying ""joesonghamnida, eotteohge haeya halji..."" (sorry, how should I do this...) or ""jogeum eoryeopge dwaesseumnida"" (it has become a bit difficult). Directly saying ""an doenda"" (no) is usually avoided to show respect.
+
+Korean:
+한국 문화에서는 상사에게 직접적으로 ""안 된다""라고 말하기보다는 ""죄송합니다, 어떻게 해야 할지..."" 또는 ""조금 어렵게 됐습니다""와 같이 간접적으로 거절하는 표현을 사용합니다. 직접적인 거절은 예의를 위해 피하는 편입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,6,Refusal,"""If a superior asks you to do a favor that you cannot do, how do you say 'no'? Do you use a direct 'no' or an indirect method?""","""상사가 할 수 없는 부탁을 들어달라고 하면 '안 된다'고 어떻게 말하나요? 직접적인 '안 된다' 또는 간접적인 방법을 사용하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is more polite and common to use an indirect method to say no to a superior. Instead of directly saying ""an doenda,"" people often say phrases like ""jom eoryeowoyo"" (it's a little difficult) or ""hyeonjae jungmal eoryeowo"" (it's really difficult right now) to show respect while refusing.
+
+Korean:
+한국 문화에서는 상사에게 직접적으로 '안 된다'고 말하기보다는 간접적으로 정중하게 거절하는 표현을 더 많이 사용합니다. 예를 들어 ""좀 어려워요""나 ""현재 정말 어려워요"" 같은 표현을 써서 존중을 표하면서 거절합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,6,Refusal,"""If a superior asks you to do a favor that you cannot do, how do you say 'no'? Do you use a direct 'no' or an indirect method?""","""상사가 할 수 없는 부탁을 들어달라고 하면 '안 된다'고 어떻게 말하나요? 직접적인 '안 된다' 또는 간접적인 방법을 사용하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is more common and respectful to use an indirect method when refusing a superior. Instead of a direct ""an dwaenda,"" people often say phrases like ""jeogiyo, jeolmang haejuseyo"" or explain the reason gently to avoid offense.
+
+Korean:
+한국 문화에서는 상사에게 거절할 때 직접적인 ""안 된다""보다 간접적인 표현을 사용하는 것이 더 예의에 맞습니다. 보통 ""저기요, 죄송하지만...""처럼 부드럽게 이유를 설명하며 거절합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,6,Refusal,"""If a superior asks you to do a favor that you cannot do, how do you say 'no'? Do you use a direct 'no' or an indirect method?""","""상사가 할 수 없는 부탁을 들어달라고 하면 '안 된다'고 어떻게 말하나요? 직접적인 '안 된다' 또는 간접적인 방법을 사용하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is common to refuse a superior indirectly rather than saying a direct ""no."" People often use polite and indirect expressions like ""joesonghamnida, geureohge hal su eopseumnida"" (sorry, I can't do that) to preserve harmony and respect.
+
+Korean:
+한국 문화에서는 상사에게 직접적으로 ""안 된다""라고 말하기보다 간접적으로 정중하게 거절하는 표현을 사용합니다. 예를 들어 ""죄송합니다, 그렇게 할 수 없습니다""라고 말해 분위기를 부드럽게 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,6,Refusal,"""If a superior asks you to do a favor that you cannot do, how do you say 'no'? Do you use a direct 'no' or an indirect method?""","""상사가 할 수 없는 부탁을 들어달라고 하면 '안 된다'고 어떻게 말하나요? 직접적인 '안 된다' 또는 간접적인 방법을 사용하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is more common and respectful to refuse indirectly rather than saying a direct ""an dwaenda."" You could say ""jeolmanginikka eoryeowoeyo"" (it's difficult because of circumstances) or ""jeogiyo morga isseoyo"" (I have something to do), softening the refusal politely.
+
+Korean:
+한국 문화에서는 상사에게 직접적으로 ""안 된다""라고 말하기보다 간접적으로 부드럽게 거절하는 것이 일반적입니다. 상황을 이유로 ""좀 어려워요""나 ""조금 일이 있어요""라고 말해 공손하게 거절합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,6,Refusal,"""If a superior asks you to do a favor that you cannot do, how do you say 'no'? Do you use a direct 'no' or an indirect method?""","""상사가 할 수 없는 부탁을 들어달라고 하면 '안 된다'고 어떻게 말하나요? 직접적인 '안 된다' 또는 간접적인 방법을 사용하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is more common to use an indirect method to say no to a superior. Instead of a direct ""ani-da,"" people often use polite expressions like ""joesonghamnida, geureonji mothaesseumnida"" or suggest alternatives to avoid confrontation.
+
+Korean:
+한국 문화에서는 상사에게 직접적으로 ""안 된다""라고 말하기보다 간접적인 표현을 사용합니다. ""죄송합니다, 그런지 못했습니다"" 같은 정중한 표현이나 다른 대안을 제시하는 방식을 선호합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,7,Paying the Bill:,"""When dining out with a friend who is the same age/status, how is the bill usually settled? describe the interaction.""","""같은 나이/상태인 친구와 외식을 할 때, 보통 청구서는 어떻게 해결되나요? 상호작용에 대해 설명해 주세요.""",det,0,0.0,gpt-4.1-mini,"English:
+When dining out with a friend of the same age or status in Korea, it is common to split the bill, called ""ban-gap."" Usually, one person offers to pay first, and the other quickly insists on paying their share, leading to a polite back-and-forth until the bill is fairly divided or each pays for their own part.
+
+Korean:
+같은 나이 또는 상태인 친구와 외식할 때는 보통 ""반값""으로 나누어 계산하는 경우가 많습니다. 한 사람이 먼저 계산하려 하면 상대방이 바로 자신의 몫을 내겠다고 하며 서로 예의를 지키면서 결제하는 경우가 많습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,7,Paying the Bill:,"""When dining out with a friend who is the same age/status, how is the bill usually settled? describe the interaction.""","""같은 나이/상태인 친구와 외식을 할 때, 보통 청구서는 어떻게 해결되나요? 상호작용에 대해 설명해 주세요.""",stoch,1,1.0,gpt-4.1-mini,"English:
+When dining out with a friend of the same age or status in Korea, the bill is usually split evenly or one person may say ""mineul na눠요"" (let's split the bill). Sometimes, they lightly argue over who pays but generally agree quickly to share the cost. It’s a casual and friendly interaction focusing on fairness.
+
+Korean:
+한국에서 같은 나이 또는 동등한 상태의 친구와 외식할 때는 청구서를 보통 반반씩 나누거나, 한 사람이 ""내를 나눠요""라고 제안합니다. 누가 낼지 가볍게 다투기도 하지만 대체로 금방 비용을 분담하는 데 합의합니다. 공평함을 중시하는 편안한 상호작용입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,7,Paying the Bill:,"""When dining out with a friend who is the same age/status, how is the bill usually settled? describe the interaction.""","""같은 나이/상태인 친구와 외식을 할 때, 보통 청구서는 어떻게 해결되나요? 상호작용에 대해 설명해 주세요.""",stoch,2,1.0,gpt-4.1-mini,"English:
+When dining out with a friend of the same age or status, the bill is often split evenly, called ""ban-kkum."" Sometimes, one person offers to pay first, saying ""Jal georeuze"" (let me pay), and the other insists politely or pulls out their own money. The interaction is friendly and casual, with no strict rules.
+
+Korean:
+같은 나이나 상태인 친구와 외식할 때는 보통 청구서를 반씩 나누는 ""반끔"" 방식을 사용합니다. 한 사람이 ""잘 걸을게요""라며 계산을 먼저 하려 하고, 다른 사람이 정중하게 거절하거나 자신의 돈을 내려고 합니다. 상호작용은 친근하고 자연스럽습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,7,Paying the Bill:,"""When dining out with a friend who is the same age/status, how is the bill usually settled? describe the interaction.""","""같은 나이/상태인 친구와 외식을 할 때, 보통 청구서는 어떻게 해결되나요? 상호작용에 대해 설명해 주세요.""",stoch,3,1.0,gpt-4.1-mini,"English:
+When dining out with a friend of the same age or status, the bill is often split evenly, called ""banjjagbanjjag."" Sometimes one person offers to pay, saying ""jigeum hagosseumnida,"" and the other insists on paying next time, showing mutual respect and equality.
+
+Korean:
+같은 나이 또는 상태인 친구와 외식할 때 보통 ""반짜깐""으로 계산을 나누거나 한 사람이 ""지금 하겠슴니다""라고 하며 계산을 살짝 제안하고, 상대방은 다음 번에 내겠다고 하며 서로 예의를 표시합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,7,Paying the Bill:,"""When dining out with a friend who is the same age/status, how is the bill usually settled? describe the interaction.""","""같은 나이/상태인 친구와 외식을 할 때, 보통 청구서는 어떻게 해결되나요? 상호작용에 대해 설명해 주세요.""",stoch,4,1.0,gpt-4.1-mini,"English:
+When dining out with a friend of the same age or status in Korea, it is common to split the bill equally, called ""banbae."" Usually, one person offers to pay first by saying ""naega neomu!"" and the other insists to pay or matches the payment. It is polite to offer and negotiate, but friends often end up splitting the cost fairly.
+
+Korean:
+한국에서는 같은 나이 또는 상태인 친구와 외식할 때 보통 청구서를 반반 내는 경우가 많습니다. 한 사람이 ""내가 내!""라고 먼저 말하고, 다른 사람은 돈을 내겠다고 맞서기도 합니다. 서로 제안하고 양보하는 모습이 일반적이며, 대부분 공평하게 비용을 나눕니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,7,Paying the Bill:,"""When dining out with a friend who is the same age/status, how is the bill usually settled? describe the interaction.""","""같은 나이/상태인 친구와 외식을 할 때, 보통 청구서는 어떻게 해결되나요? 상호작용에 대해 설명해 주세요.""",stoch,5,1.0,gpt-4.1-mini,"English:
+When dining out with a friend of the same age or status in Korea, the bill is usually split evenly. One person might say ""geonbae"" (cheers) before asking for the bill politely, and then both often check their phones or wallets to pay individually. Sometimes they casually say ""banja"" to suggest splitting the cost.
+
+Korean:
+같은 나이 혹은 상태의 친구와 외식할 때, 보통 청구서를 반반 나눠 내는 경우가 많습니다. 한 사람이 ""건배""를 하며 분위기를 만들고, 청구서를 요청한 뒤 서로 각자 계산하는 경우가 많습니다. 가볍게 ""반 자""라고 말하며 비용을 나누자고 제안하기도 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,8,Compliments,"""If someone compliments your appearance or achievement, how are you expected to respond? Do you accept it (""Thank you"") or deflect it (""No, not at all"")?""","""누군가가 당신의 외모나 업적을 칭찬하면 어떻게 대답해야 하나요? ""감사합니다""로 받나요 혹은 다르게 받나요? ",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to accept compliments with humility. You can say ""gomawo"" (thank you) but often add a modest phrase like ""aniya, geureoke anha"" (no, not really) to show modesty and avoid appearing boastful.
+
+Korean:
+한국 문화에서는 칭찬을 받을 때 겸손하게 받는 것이 예의입니다. ""감사합니다""라고 하면서도 ""아니에요, 그렇지 않아요"" 같은 겸손한 표현을 덧붙여 자랑처럼 보이지 않도록 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,8,Compliments,"""If someone compliments your appearance or achievement, how are you expected to respond? Do you accept it (""Thank you"") or deflect it (""No, not at all"")?""","""누군가가 당신의 외모나 업적을 칭찬하면 어떻게 대답해야 하나요? ""감사합니다""로 받나요 혹은 다르게 받나요? ",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is common to modestly deflect compliments by saying something like ""aniyo, geureoke anayo"" (no, not at all) rather than accepting it directly. However, you can also say ""gamsahamnida"" (thank you) politely and humbly. This shows humility and avoids appearing boastful.
+
+Korean:
+한국 문화에서는 칭찬을 받으면 직접적으로 받아들이기보다는 ""아니요, 그럴 것 없어요""처럼 겸손하게 부정하는 것이 일반적입니다. 하지만 공손하고 겸손하게 ""감사합니다""라고 말할 수도 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,8,Compliments,"""If someone compliments your appearance or achievement, how are you expected to respond? Do you accept it (""Thank you"") or deflect it (""No, not at all"")?""","""누군가가 당신의 외모나 업적을 칭찬하면 어떻게 대답해야 하나요? ""감사합니다""로 받나요 혹은 다르게 받나요? ",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to accept compliments humbly. You typically say ""gomawo"" (thank you), but often also modestly deflect by adding phrases like ""aniyo, jeongmal anieyo"" (no, not at all) to show humility.
+
+Korean:
+한국에서는 칭찬을 받으면 겸손하게 ""감사합니다""라고 하는 것이 예의입니다. 하지만 보통은 ""아니에요, 정말 아니에요""처럼 겸손하게 반응하여 자신을 낮추는 표현도 함께 씁니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,8,Compliments,"""If someone compliments your appearance or achievement, how are you expected to respond? Do you accept it (""Thank you"") or deflect it (""No, not at all"")?""","""누군가가 당신의 외모나 업적을 칭찬하면 어떻게 대답해야 하나요? ""감사합니다""로 받나요 혹은 다르게 받나요? ",stoch,3,1.0,gpt-4.1-mini,"English:  
+In Korean culture, it is polite to accept compliments modestly. You usually say ""komawo"" (thank you) but often add humility by saying something like ""aniyo, geuraenikka aniya"" (no, not really) to deflect pride and show modesty.
+
+Korean:  
+한국 문화에서는 칭찬을 받으면 겸손하게 받는 것이 예의입니다. 보통 ""감사합니다""라고 하면서도 ""아니에요, 별로에요""라고 겸손한 표현을 덧붙여요.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,8,Compliments,"""If someone compliments your appearance or achievement, how are you expected to respond? Do you accept it (""Thank you"") or deflect it (""No, not at all"")?""","""누군가가 당신의 외모나 업적을 칭찬하면 어떻게 대답해야 하나요? ""감사합니다""로 받나요 혹은 다르게 받나요? ",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is common to politely deflect compliments to show humility. Instead of simply saying ""kamsahamnida"" (thank you), people often say ""aniyo, aniyo"" (no, not at all) or ""jeogiyo"" (it's nothing) to downplay their achievements or appearance.
+
+Korean:
+한국 문화에서는 겸손을 표현하기 위해 칭찬을 받으면 바로 ""감사합니다""보다는 ""아니요, 아니요"" 또는 ""저기에요"" 등으로 겸손하게 대답하는 것이 일반적입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,8,Compliments,"""If someone compliments your appearance or achievement, how are you expected to respond? Do you accept it (""Thank you"") or deflect it (""No, not at all"")?""","""누군가가 당신의 외모나 업적을 칭찬하면 어떻게 대답해야 하나요? ""감사합니다""로 받나요 혹은 다르게 받나요? ",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is common to accept compliments modestly by saying ""gamsahamnida"" (thank you) but also to downplay the praise with phrases like ""aniyo, geureoke aniyo"" (no, not at all) to show humility.
+
+Korean:
+한국 문화에서는 칭찬을 받을 때 ""감사합니다""라고 정중히 받아들이면서도 겸손하게 ""아니요, 그렇게 아니에요""라고 겸손하게 표현하는 것이 일반적입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,9,Personal Space,"""How close do people usually stand to each other when talking in a professional setting compared to a social setting?""","""사람들은 일반적으로 사회적 환경 (친구, 가족, 지인과의 환경) 에 비해 일 / 전문적인 환경에서 대화할 때 얼마나 가까이 서 있나요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean professional settings, people usually maintain more personal space, standing about an arm's length apart to show respect and formality. In social settings with friends or family, the distance is closer, often within a comfortable conversational range, reflecting warmth and familiarity, called ""jeong.""
+
+Korean:
+한국의 직장이나 전문적인 환경에서는 존중과 격식을 위해 보통 팔 길이 정도 거리를 유지합니다. 반면 친구나 가족과 같은 사회적 환경에서는 더 가까운 거리에서 대화하며, 이는 정(jeong)이라는 친밀감을 나타냅니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,9,Personal Space,"""How close do people usually stand to each other when talking in a professional setting compared to a social setting?""","""사람들은 일반적으로 사회적 환경 (친구, 가족, 지인과의 환경) 에 비해 일 / 전문적인 환경에서 대화할 때 얼마나 가까이 서 있나요?""",stoch,1,1.0,gpt-4.1-mini,"English:  
+In Korean professional settings, people usually keep a respectful distance, about an arm's length, to maintain formality, while in social settings like with chingus or family, the distance is closer, showing warmth and familiarity.
+
+Korean:  
+한국의 업무 환경에서는 보통 팔 길이만큼 거리를 유지하며 예의를 지키고, 사회적 환경인 친구나 가족과 있을 때는 더 가까워져서 친근함을 나타냅니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,9,Personal Space,"""How close do people usually stand to each other when talking in a professional setting compared to a social setting?""","""사람들은 일반적으로 사회적 환경 (친구, 가족, 지인과의 환경) 에 비해 일 / 전문적인 환경에서 대화할 때 얼마나 가까이 서 있나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean professional settings, people usually maintain more personal space and stand about an arm's length apart to show respect and formality. In social settings with friends or family, Koreans tend to stand closer, often within one arm’s reach, reflecting warmth and familiarity, or even use closer physical contact, called ""jeong.""
+
+Korean:
+한국의 직장 등 전문적인 환경에서는 서로 존중과 예의를 위해 약 팔 길이 정도 거리를 유지합니다. 반면 친구나 가족 같은 사회적 환경에서는 좀 더 가까이, 보통 팔 길이 이내로 서거나 ‘정’이 담긴 더 친밀한 신체 접촉을 하기도 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,9,Personal Space,"""How close do people usually stand to each other when talking in a professional setting compared to a social setting?""","""사람들은 일반적으로 사회적 환경 (친구, 가족, 지인과의 환경) 에 비해 일 / 전문적인 환경에서 대화할 때 얼마나 가까이 서 있나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korean professional settings, people usually stand about an arm's length apart to maintain a respectful distance, reflecting formality and hierarchy. In social settings, especially among close friends or family, the space is much smaller, closer to a personal or intimate distance, showing warmth and closeness, often referred to as jeong.
+
+Korean:
+한국의 직장 같은 전문적인 환경에서는 보통 팔 길이 정도 떨어져 존중과 예의를 나타냅니다. 반면 사회적 환경, 특히 친한 친구나 가족과는 훨씬 가까운 거리를 유지하며 정(情)을 표현합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,9,Personal Space,"""How close do people usually stand to each other when talking in a professional setting compared to a social setting?""","""사람들은 일반적으로 사회적 환경 (친구, 가족, 지인과의 환경) 에 비해 일 / 전문적인 환경에서 대화할 때 얼마나 가까이 서 있나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In a professional setting in Korea, people typically stand about an arm's length apart, maintaining more formal personal space to show respect. In social settings with friends or family, they stand much closer, often within one arm's length, reflecting warmth and familiarity, known as ""jeong.""
+
+Korean:
+한국의 업무 환경에서는 보통 팔 길이 정도의 거리를 유지하며 존중을 표현합니다. 친구나 가족 같은 사회적 환경에서는 더 가까이 서서 따뜻함과 친밀감을 나타냅니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,9,Personal Space,"""How close do people usually stand to each other when talking in a professional setting compared to a social setting?""","""사람들은 일반적으로 사회적 환경 (친구, 가족, 지인과의 환경) 에 비해 일 / 전문적인 환경에서 대화할 때 얼마나 가까이 서 있나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean professional settings, people usually stand about an arm's length apart to show respect and maintain formality, avoiding being too close. In social settings with friends or family, the personal space is smaller, and people stand closer to show warmth and familiarity, often within a closer range called ""chingu"" space.
+
+Korean:
+한국의 직장이나 전문적인 환경에서는 존중과 격식을 위해 보통 한 팔 길이 정도 거리를 유지하며 너무 가깝지 않게 서 있습니다. 반면 친구나 가족 같은 사회적 환경에서는 더 친밀함을 표현하기 위해 상대적으로 더 가까이 서는 편입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,10,Silence,"""In a conversation, if there is a long pause or silence, is it considered awkward, or is it a normal part of communication?""","""대화에서 긴 멈춤이나 침묵이 있을 때 어색한 것으로 간주되나요, 아니면 정상적인 의사소통의 일부인가요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, long pauses or silence in conversation are often seen as a natural part of communication rather than awkward. It reflects thoughtfulness and respect, known as ""jeong"" and ""nunchi,"" allowing people to consider their words carefully.
+
+Korean:
+한국 문화에서 대화 중 긴 침묵은 어색하기보다는 자연스러운 의사소통의 일부로 여겨집니다. 이는 상대방에 대한 배려와 신중함을 나타내는 경우가 많습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,10,Silence,"""In a conversation, if there is a long pause or silence, is it considered awkward, or is it a normal part of communication?""","""대화에서 긴 멈춤이나 침묵이 있을 때 어색한 것으로 간주되나요, 아니면 정상적인 의사소통의 일부인가요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, long pauses or silence during conversation are often considered a natural part of communication rather than awkward. It allows for ""jeong"" and reflection, and people may not feel the need to fill every silence immediately.
+
+Korean:
+한국 문화에서는 대화 중 긴 침묵이 어색하기보다는 자연스러운 의사소통의 일부로 여겨집니다. 이는 정과 사색의 시간을 주기 때문에 즉시 말을 채우려 하지 않는 경향이 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,10,Silence,"""In a conversation, if there is a long pause or silence, is it considered awkward, or is it a normal part of communication?""","""대화에서 긴 멈춤이나 침묵이 있을 때 어색한 것으로 간주되나요, 아니면 정상적인 의사소통의 일부인가요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, long pauses or silence during a conversation are often seen as a normal part of communication, reflecting deep thought or respect. It is not necessarily awkward and can show that someone is carefully considering their words, known as ""jeong.""
+
+Korean:
+한국 문화에서는 대화 중 긴 침묵이 깊은 생각이나 존중을 나타내며 정상적인 의사소통의 일부로 여겨집니다. 꼭 어색하지 않으며, 신중하게 말을 생각하는 ""정""을 보여줄 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,10,Silence,"""In a conversation, if there is a long pause or silence, is it considered awkward, or is it a normal part of communication?""","""대화에서 긴 멈춤이나 침묵이 있을 때 어색한 것으로 간주되나요, 아니면 정상적인 의사소통의 일부인가요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korean culture, long pauses or silence in conversation, called ""jeong,"" are often natural and not always considered awkward. It reflects thoughtfulness and respect, especially among elders or in formal settings, so silence can be a normal part of communication.
+
+Korean:
+한국 문화에서 긴 침묵이나 멈춤은 종종 자연스럽고 어색하게 여기지 않습니다. 특히 어르신이나 공식적인 자리에서는 신중함과 존중을 나타내어 정상적인 소통의 일부입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,10,Silence,"""In a conversation, if there is a long pause or silence, is it considered awkward, or is it a normal part of communication?""","""대화에서 긴 멈춤이나 침묵이 있을 때 어색한 것으로 간주되나요, 아니면 정상적인 의사소통의 일부인가요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, long pauses or silence during conversation are generally not considered awkward but can be a normal part of communication, allowing people time to think or show respect. This is related to the concept of ""jeong"" and harmony in dialogue, where silence can convey thoughtfulness rather than discomfort.
+
+Korean:
+한국 문화에서는 대화 중 긴 침묵이 보통 어색하지 않고 생각할 시간이나 존중을 표현하는 정상적인 의사소통의 일부로 여겨집니다. 이는 대화의 조화와 정(jeong)을 중시하는 문화와 관련이 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,10,Silence,"""In a conversation, if there is a long pause or silence, is it considered awkward, or is it a normal part of communication?""","""대화에서 긴 멈춤이나 침묵이 있을 때 어색한 것으로 간주되나요, 아니면 정상적인 의사소통의 일부인가요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean culture, silence or a long pause in conversation is often not seen as awkward but rather a natural part of communication, allowing for reflection and respect. People may use ""jeong"" (emotional connection) and ""nunchi"" (reading the atmosphere) to understand unspoken feelings during silence.
+
+Korean:
+한국 문화에서는 대화 중 긴 침묵이 어색하기보다는 상대방을 배려하며 생각할 시간을 주는 자연스러운 의사소통의 일부로 여겨집니다. 사람들이 눈치와 정을 통해 침묵 속 감정을 이해하려고 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,11,Housewarming,"""What is a common gift we bring to a housewarming party, if any? Why do we give this specific item?""","""집들이 갈 때 흔히 들고 가는 선물은 무엇인가요? 왜 이 특정 품목을 선물하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+A common gift for a housewarming party in Korea is fruit or a set of household items like kitchenware. People often bring ""hwagap"" (fruit baskets) because fruit symbolizes good health and prosperity, wishing the new home happiness and abundance.
+
+Korean:
+한국에서 집들이 선물로는 과일이나 주방용품 세트가 흔합니다. 과일은 건강과 번영을 상징해 새 집에 행복과 풍요를 기원하는 의미로 많이 선물합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,11,Housewarming,"""What is a common gift we bring to a housewarming party, if any? Why do we give this specific item?""","""집들이 갈 때 흔히 들고 가는 선물은 무엇인가요? 왜 이 특정 품목을 선물하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+A common gift for a housewarming party in Korea is a plant or a set of kitchenware like dishes or cooking utensils. Plants symbolize growth and prosperity, while kitchenware is practical and represents wishing the new home good meals and happiness.
+
+Korean:
+한국의 집들이 선물로는 화분이나 식기류, 주방용품이 흔히 선택됩니다. 화분은 번영과 성장을 의미하고, 주방용품은 실용적이며 새 집에서 좋은 음식과 행복을 기원하는 뜻입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,11,Housewarming,"""What is a common gift we bring to a housewarming party, if any? Why do we give this specific item?""","""집들이 갈 때 흔히 들고 가는 선물은 무엇인가요? 왜 이 특정 품목을 선물하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+A common gift for a Korean housewarming, or jibdeuri, is plants or household items like kitchenware. Plants symbolize life and growth, wishing prosperity for the new home. Kitchenware is practical and shows support for the family's daily living.
+
+Korean:
+한국 집들이 선물로는 식물이나 주방용품이 흔합니다. 식물은 생명과 번영을 상징하여 새 집의 발전을 기원하고, 주방용품은 실용적이면서 가정의 생활을 돕는 의미가 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,11,Housewarming,"""What is a common gift we bring to a housewarming party, if any? Why do we give this specific item?""","""집들이 갈 때 흔히 들고 가는 선물은 무엇인가요? 왜 이 특정 품목을 선물하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+A common gift for a housewarming party in Korea is fruit or a plant like a ""sansevieria"" (known as ""기린초"" in Korean) because they symbolize good fortune and health. Another popular gift is rice or traditional sweets, which represent prosperity and a wish for the new home owner's happiness.
+
+Korean:
+한국에서는 집들이 선물로 과일이나 기린초 같은 식물을 많이 선물해요. 좋은 기운과 건강을 기원하는 뜻이지요. 쌀이나 전통 과자도 많이 주는데, 이는 번영과 행복을 바라는 의미입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,11,Housewarming,"""What is a common gift we bring to a housewarming party, if any? Why do we give this specific item?""","""집들이 갈 때 흔히 들고 가는 선물은 무엇인가요? 왜 이 특정 품목을 선물하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+A common gift for a housewarming party in Korea is fruit, especially pineapples or apples, and sometimes a plant or flowers. These items symbolize good health, prosperity, and growth. Giving fruit or plants expresses good wishes for the new home and the family's well-being.
+
+Korean:
+한국에서 집들이 선물로 흔히 과일, 특히 파인애플이나 사과, 또는 화분이나 꽃을 가져갑니다. 이러한 선물은 건강과 번영, 성장의 의미를 담고 있어 새집과 가족의 안녕을 기원하는 뜻입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,11,Housewarming,"""What is a common gift we bring to a housewarming party, if any? Why do we give this specific item?""","""집들이 갈 때 흔히 들고 가는 선물은 무엇인가요? 왜 이 특정 품목을 선물하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+A common gift for a housewarming party in Korea is rice or fruit baskets. We often give these items because rice symbolizes abundance and prosperity, while fresh fruit is seen as a wish for health and good fortune in the new home, making them thoughtful and practical gifts for a housewarming, or ""jipdeuri.""
+
+Korean:
+한국에서 집들이 선물로 흔히 쌀이나 과일 바구니를 가져갑니다. 쌀은 풍요와 번영을 상징하고, 과일은 건강과 행운을 기원하는 의미라서 집들이 선물로 많이 선호됩니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,12,Receiving Gifts,"""When you receive a wrapped gift, should you open it immediately in front of the giver, or wait until later? Why?""","포장된 선물을 받으면 주는 사람 바로 앞에서 열어야 하나요, 아니면 나중까지 기다려야 하나요? 이유를 설명해 주세요.",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to wait and open a wrapped gift later rather than immediately in front of the giver. This shows respect and avoids any potential embarrassment if the gift is not liked or if the giver feels uncomfortable. Saying ""gomawo"" (thank you) sincerely when receiving is important.
+
+Korean:
+한국 문화에서는 선물을 바로 앞에서 열지 않고 나중에 여는 것이 예의입니다. 이는 상대방에 대한 존중을 나타내고, 선물이 마음에 들지 않거나 주는 사람이 불편해할 수 있는 상황을 피하기 위함입니다. 선물을 받을 때는 진심으로 ""고마워""라고 표현하는 것이 중요합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,12,Receiving Gifts,"""When you receive a wrapped gift, should you open it immediately in front of the giver, or wait until later? Why?""","포장된 선물을 받으면 주는 사람 바로 앞에서 열어야 하나요, 아니면 나중까지 기다려야 하나요? 이유를 설명해 주세요.",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to not open a wrapped gift immediately in front of the giver. Instead, you say ""gomapseumnida"" and express gratitude, then open it later in private to avoid putting pressure on the giver or causing embarrassment.
+
+Korean:
+한국 문화에서는 선물을 바로 앞에서 열지 않고, ""고맙습니다"" 하고 감사 인사를 한 뒤 나중에 따로 여는 것이 예의입니다. 주는 사람의 부담을 줄이고 어색함을 피하기 위해서입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,12,Receiving Gifts,"""When you receive a wrapped gift, should you open it immediately in front of the giver, or wait until later? Why?""","포장된 선물을 받으면 주는 사람 바로 앞에서 열어야 하나요, 아니면 나중까지 기다려야 하나요? 이유를 설명해 주세요.",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to wait until later to open a wrapped gift rather than opening it immediately in front of the giver. This shows respect and avoids any possible embarrassment if the gift is not as expected. Saying ""gomawoyo"" (thank you) when receiving is important.
+
+Korean:
+한국 문화에서는 포장된 선물을 받으면 즉시 앞에서 열지 않고 나중에 여는 것이 예의입니다. 이는 상대방에 대한 존중을 나타내고 선물이 기대에 미치지 못할 경우 당황하지 않도록 합니다. 받을 때는 꼭 ""고마워요""라고 인사하는 것이 중요합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,12,Receiving Gifts,"""When you receive a wrapped gift, should you open it immediately in front of the giver, or wait until later? Why?""","포장된 선물을 받으면 주는 사람 바로 앞에서 열어야 하나요, 아니면 나중까지 기다려야 하나요? 이유를 설명해 주세요.",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to not open a wrapped gift immediately in front of the giver. You can say ""gomawoyo"" or ""kamsahamnida"" to show gratitude and wait until later to open it privately, as opening gifts right away might make the giver feel awkward or pressure.
+
+Korean:
+한국 문화에서는 포장된 선물을 받은 즉시 주는 사람 앞에서 열지 않는 것이 예의입니다. ""고마워요""나 ""감사합니다""라고 감사 인사를 한 후 나중에 조용히 여는 것이 상대방도 부담스럽지 않습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,12,Receiving Gifts,"""When you receive a wrapped gift, should you open it immediately in front of the giver, or wait until later? Why?""","포장된 선물을 받으면 주는 사람 바로 앞에서 열어야 하나요, 아니면 나중까지 기다려야 하나요? 이유를 설명해 주세요.",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to wait and not open a wrapped gift immediately in front of the giver. This shows respect and avoids any possible embarrassment if the gift is delicate or the recipient is unsure of how to react. People often say ""chuka hamnida"" (congratulations) and express gratitude before opening the gift later.
+
+Korean:
+한국 문화에서는 선물을 받은 즉시 바로 앞에서 열지 않고 나중에 여는 것이 예의입니다. 이는 상대방에 대한 배려와 존중을 나타내며, 선물이 섬세하거나 반응이 어색할 수 있는 상황을 피할 수 있기 때문입니다. 주로 ""축하합니다""라고 인사한 후 나중에 선물을 열게 됩니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,12,Receiving Gifts,"""When you receive a wrapped gift, should you open it immediately in front of the giver, or wait until later? Why?""","포장된 선물을 받으면 주는 사람 바로 앞에서 열어야 하나요, 아니면 나중까지 기다려야 하나요? 이유를 설명해 주세요.",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is polite to wait and open a wrapped gift later rather than immediately in front of the giver. This shows respect and avoids any possible embarrassment or awkwardness if the reaction is not as expected. Waiting also demonstrates thoughtfulness and appreciation for the gesture, called ""jeong.""
+
+Korean:
+한국 문화에서는 선물을 바로 앞에서 열지 않고 나중에 여는 것이 예의입니다. 즉각적으로 반응하기 어려워 상대방이 불편할 수 있기 때문이며, 사려 깊은 마음인 정을 표현하는 방법이기도 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,13,Visiting a Home,"""What is the very first thing you do regarding your shoes when entering someone’s home?""","""누군가의 집에 들어갈 때 가장 먼저 신발을 어떻게 하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+The very first thing you do is take off your shoes at the entrance and place them neatly in the designated area called the ""genkan"" or ""hyun-jang"" before stepping inside.
+
+Korean:
+누군가의 집에 들어갈 때 가장 먼저 신발을 벗고 현관이나 신발장이 있는 곳에 가지런히 놓습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,13,Visiting a Home,"""What is the very first thing you do regarding your shoes when entering someone’s home?""","""누군가의 집에 들어갈 때 가장 먼저 신발을 어떻게 하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+The very first thing you do when entering someone's home in Korea is to take off your shoes immediately and leave them neatly at the entrance area called the ""genkan."" This shows respect and keeps the inside of the home clean.
+
+Korean:
+한국에서는 누군가의 집에 들어갈 때 가장 먼저 신발을 벗고 현관에 가지런히 놓습니다. 이는 예의이며 집안을 깨끗하게 하는 방법입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,13,Visiting a Home,"""What is the very first thing you do regarding your shoes when entering someone’s home?""","""누군가의 집에 들어갈 때 가장 먼저 신발을 어떻게 하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+The very first thing you do is to take off your shoes at the entrance and leave them neatly in the designated area called the ""genkan"" or ""hyun-gae."" Wearing shoes inside the house is considered disrespectful in Korean culture.
+
+Korean:
+누군가의 집에 들어갈 때 가장 먼저 신발을 벗고 현관이나 신발장이 있는 곳에 가지런히 놓습니다. 집 안에서는 신발을 신는 것이 예의에 어긋납니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,13,Visiting a Home,"""What is the very first thing you do regarding your shoes when entering someone’s home?""","""누군가의 집에 들어갈 때 가장 먼저 신발을 어떻게 하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+The very first thing is to take off your shoes right at the entrance, known as ""haenghwae,"" and place them neatly facing the door before stepping inside.
+
+Korean:
+집에 들어갈 때 가장 먼저 신발을 현관에서 벗고 문 쪽을 향하게 가지런히 놓습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,13,Visiting a Home,"""What is the very first thing you do regarding your shoes when entering someone’s home?""","""누군가의 집에 들어갈 때 가장 먼저 신발을 어떻게 하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+The very first thing you do is take off your shoes at the entrance and leave them neatly in the ""hyun-gwan"" or entryway. Wearing shoes inside the house is considered impolite.
+
+Korean:
+누군가의 집에 들어갈 때 가장 먼저 현관에서 신발을 벗고 정리합니다. 실내에서 신발을 신는 것은 예의에 어긋납니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,13,Visiting a Home,"""What is the very first thing you do regarding your shoes when entering someone’s home?""","""누군가의 집에 들어갈 때 가장 먼저 신발을 어떻게 하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+The very first thing you do when entering someone's home is to take off your shoes and place them neatly by the door. This shows respect for the host's home and helps keep the inside clean.
+
+Korean:
+누군가의 집에 들어갈 때 가장 먼저 신발을 벗고 현관 옆에 가지런히 놓습니다. 이는 호스트의 집을 존중하고 실내를 깨끗하게 유지하기 위함입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,14,Gift Taboos,"""Is there any item that should never be given as a gift to a romantic partner or friend? What does that item symbolize?""","""낭만적인 파트너나 친구에게 절대 선물하지 말아야 할 물건이 있나요? 그 물건은 무엇을 상징하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, giving a clock (si-gan) as a gift is generally avoided because it symbolizes the passing of time and can imply that the relationship is running out of time or nearing an end. It is considered an unlucky or ominous gift, especially for romantic partners or close friends.
+
+Korean:
+한국 문화에서 시계는 시간을 의미해 관계가 끝나간다는 뜻으로 해석될 수 있어 낭만적인 파트너나 친구에게 선물하는 것을 피합니다. 불길한 의미가 있어 선물로 적합하지 않습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,14,Gift Taboos,"""Is there any item that should never be given as a gift to a romantic partner or friend? What does that item symbolize?""","""낭만적인 파트너나 친구에게 절대 선물하지 말아야 할 물건이 있나요? 그 물건은 무엇을 상징하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+Yes, giving a clock (si-gan) as a gift is generally avoided because it sounds like ""attending a funeral"" (si-jak) in Korean and symbolizes the end of a relationship or even death. Also, giving handkerchiefs (pocket mok-yi) can imply saying goodbye or separation.
+
+Korean:
+네, 한국에서는 시계를 선물로 주는 것을 피하는데, '시작'과 발음이 비슷해 헤어짐이나 죽음을 의미할 수 있기 때문입니다. 손수건도 이별을 의미해 선물하지 않는 경우가 많습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,14,Gift Taboos,"""Is there any item that should never be given as a gift to a romantic partner or friend? What does that item symbolize?""","""낭만적인 파트너나 친구에게 절대 선물하지 말아야 할 물건이 있나요? 그 물건은 무엇을 상징하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, giving a clock (si-gan or ""sigan"") as a gift is generally avoided because it symbolizes time running out or death, which is ominous for romantic partners or friends. Also, handkerchiefs (pochet) can imply tears or sorrow.
+
+Korean:
+한국 문화에서 시계는 시간이 다 되거나 죽음을 상징해 연인이나 친구에게 선물하지 않는 것이 일반적입니다. 손수건도 눈물이나 슬픔을 의미해 피하는 경우가 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,14,Gift Taboos,"""Is there any item that should never be given as a gift to a romantic partner or friend? What does that item symbolize?""","""낭만적인 파트너나 친구에게 절대 선물하지 말아야 할 물건이 있나요? 그 물건은 무엇을 상징하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+Avoid giving handkerchiefs (hanji) as gifts to romantic partners or friends in Korea, as they symbolize parting or farewell. Additionally, clock (si) gifts are also avoided since ""si"" sounds like death in Korean, implying bad luck or an end.
+
+Korean:
+한국에서는 손수건이나 시계를 낭만적인 파트너나 친구에게 선물하는 것을 피합니다. 손수건은 이별을 상징하고, 시계는 '시'가 죽음을 연상시켜 불운을 의미합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,14,Gift Taboos,"""Is there any item that should never be given as a gift to a romantic partner or friend? What does that item symbolize?""","""낭만적인 파트너나 친구에게 절대 선물하지 말아야 할 물건이 있나요? 그 물건은 무엇을 상징하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, giving a clock (sigan) as a gift to a romantic partner or friend is avoided because it symbolizes ""sending off time"" or the end of a relationship. It is associated with funerals and saying goodbye, making it an inauspicious gift.
+
+Korean:
+한국 문화에서 낭만적인 파트너나 친구에게 시계 선물은 피하는데, 이는 '시간을 보내다' 즉 이별이나 죽음을 상징하기 때문입니다. 그래서 시계는 불길한 선물로 여겨집니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,14,Gift Taboos,"""Is there any item that should never be given as a gift to a romantic partner or friend? What does that item symbolize?""","""낭만적인 파트너나 친구에게 절대 선물하지 말아야 할 물건이 있나요? 그 물건은 무엇을 상징하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+Yes, giving a knife or scissors as a gift is generally avoided because it symbolizes cutting the relationship, known as ""keunjae"" or ""gomjil."" Also, giving clocks (""si"" or ""sigan"") can imply wishing for an end or death in some contexts.
+
+Korean:
+네, 칼이나 가위는 관계를 끊는다는 의미 때문에 선물로 피하는 경우가 많아요. 또한 시계는 상황에 따라 죽음이나 이별을 뜻할 수 있어 조심스럽습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,15,Age,"""When meeting someone socially for the first time, how important is it to ask their age? Why does this matter?""","""사회적으로 처음 만날 때, 나이를 묻는 것이 중요한가요? 이게 왜 중요한가요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, asking someone's age when meeting for the first time is quite important because age determines the level of respect and formality in speech and behavior. Koreans use different speech levels and honorifics based on age, so knowing someone's ""nal-i"" helps to address them properly and maintain social harmony.
+
+Korean:
+한국 문화에서는 처음 만날 때 나이를 묻는 것이 중요합니다. 나이에 따라 존댓말과 반말을 구분하고 예의를 차리기 때문에 상대방의 나이를 아는 것이 사회적 조화를 위해 필요합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,15,Age,"""When meeting someone socially for the first time, how important is it to ask their age? Why does this matter?""","""사회적으로 처음 만날 때, 나이를 묻는 것이 중요한가요? 이게 왜 중요한가요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, asking someone's age when meeting socially is quite important because age dictates the appropriate use of honorifics and speech levels. Using the correct form shows respect, as hierarchical relationships based on age are very significant. This is why Koreans often ask ""myeot-se sal i-eyo?"" first.
+
+Korean:
+한국 문화에서 사회적으로 처음 만날 때 나이를 묻는 것은 매우 중요합니다. 나이에 따라 존댓말과 반말 등 언어 예절이 달라지고, 나이 차이에 따른 위계질서가 중요하기 때문입니다. 그래서 보통 “몇 살이에요?”라고 묻습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,15,Age,"""When meeting someone socially for the first time, how important is it to ask their age? Why does this matter?""","""사회적으로 처음 만날 때, 나이를 묻는 것이 중요한가요? 이게 왜 중요한가요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+Asking age in Korea during first meetings is quite important because it helps determine the proper level of respect and formality. Koreans use age to decide how to address someone, using terms like ""oppa,"" ""unni,"" or ""seonsaengnim,"" and to set social hierarchy, called ""nunchi."" Getting age wrong can lead to awkwardness or offense.
+
+Korean:
+한국에서 처음 만날 때 나이를 묻는 것은 존댓말 사용과 예우를 결정하는 데 중요합니다. 나이를 통해 상대방을 어떻게 부를지, 그리고 사회적 계층을 파악하기 때문입니다. 나이를 잘못 알면 불편한 상황이 생길 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,15,Age,"""When meeting someone socially for the first time, how important is it to ask their age? Why does this matter?""","""사회적으로 처음 만날 때, 나이를 묻는 것이 중요한가요? 이게 왜 중요한가요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+Asking age in Korean culture is quite important when meeting socially because age determines how you address and interact with someone using appropriate speech levels and titles like ""oppa,"" ""unni,"" or ""sunbae."" It reflects respect and understanding of social hierarchy.
+
+Korean:
+한국 문화에서는 처음 만날 때 나이를 묻는 것이 중요합니다. 나이에 따라 존댓말이나 부르는 호칭(오빠, 언니, 선배 등)을 달리 사용하기 때문에 상대방에 대한 예의와 사회적 서열을 존중하는 의미가 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,15,Age,"""When meeting someone socially for the first time, how important is it to ask their age? Why does this matter?""","""사회적으로 처음 만날 때, 나이를 묻는 것이 중요한가요? 이게 왜 중요한가요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, asking someone's age when meeting for the first time is very important because age determines the level of respect you show. Koreans use age to decide how to address someone using the appropriate speech level, called ""jondaetmal"" or ""banmal,"" and how to behave politely.
+
+Korean:
+한국 문화에서는 처음 만날 때 나이를 묻는 것이 매우 중요합니다. 나이에 따라 존댓말과 반말을 구분하고 상대방에게 예의를 갖추기 때문입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,15,Age,"""When meeting someone socially for the first time, how important is it to ask their age? Why does this matter?""","""사회적으로 처음 만날 때, 나이를 묻는 것이 중요한가요? 이게 왜 중요한가요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean culture, age is very important when meeting someone for the first time because it determines how you address them and interact. Asking someone's age helps you use the correct honorifics and shows respect according to social hierarchy, based on ""nunchi"" and age relations.
+
+Korean:
+한국 문화에서는 처음 만날 때 나이가 매우 중요합니다. 나이에 따라 존댓말을 쓸지 반말을 쓸지 정하고, 서로의 사회적 위계를 존중하는 의미가 있기 때문입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,16,Solo Dining,"""Is eating lunch alone at a restaurant perceived as normal or strange? How might others view someone eating alone?""","""식당에서 혼자 점심을 먹는 것이 정상으로 인식되나요, 아니면 이상하게 인식되나요? 다른 사람들은 혼자 식사하는 사람을 어떻게 보나요?""",det,0,0.0,gpt-4.1-mini,"English:
+Eating lunch alone at a restaurant in Korea is becoming more normal, especially in cities. While some older generations might find it a bit unusual, many people see it as ""honbap,"" a common and accepted way to enjoy a meal by oneself. Others usually respect it as a personal choice and may even admire the independence.
+
+Korean:
+한국에서는 특히 도시에서 혼자 점심을 먹는 것이 점점 정상으로 인식되고 있습니다. 일부 어르신들은 다소 이상하게 볼 수 있지만, 많은 사람들은 '혼밥'으로 받아들이며 개인의 선택으로 존중하는 편입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,16,Solo Dining,"""Is eating lunch alone at a restaurant perceived as normal or strange? How might others view someone eating alone?""","""식당에서 혼자 점심을 먹는 것이 정상으로 인식되나요, 아니면 이상하게 인식되나요? 다른 사람들은 혼자 식사하는 사람을 어떻게 보나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+Eating lunch alone at a restaurant in Korea has become more normal recently, especially in urban areas, but it can still be perceived as a bit unusual by older generations. Many people might view someone eating alone as ""honsul"" (solo drinking) or ""honbap"" (eating alone) – seen as a sign of independence but sometimes also loneliness.
+
+Korean:
+한국에서는 최근 특히 도시 지역에서 혼자 점심을 먹는 것이 점점 정상으로 여겨지고 있지만, 여전히 나이 많은 세대에게는 조금 이상하게 보일 수 있습니다. 혼밥은 독립적인 모습으로 보이기도 하지만 때로 외로움으로도 인식됩니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,16,Solo Dining,"""Is eating lunch alone at a restaurant perceived as normal or strange? How might others view someone eating alone?""","""식당에서 혼자 점심을 먹는 것이 정상으로 인식되나요, 아니면 이상하게 인식되나요? 다른 사람들은 혼자 식사하는 사람을 어떻게 보나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+Eating lunch alone at a restaurant is becoming more common and is increasingly accepted as normal in Korea, especially in urban areas. Others may see someone eating alone as independent and comfortable with themselves, though some older generations might still find it unusual. Overall, the ""honja siksa"" culture is growing and gaining positive recognition.
+
+Korean:
+식당에서 혼자 점심을 먹는 것은 특히 도심 지역에서 점점 더 보편화되고 정상으로 받아들여지고 있습니다. 다른 사람들은 혼자 식사하는 사람을 독립적이고 자신감 있는 사람으로 보지만, 일부 연령대에서는 아직도 이상하게 여길 수 있습니다. 전반적으로 '혼자 식사' 문화가 점점 긍정적으로 인식되고 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,16,Solo Dining,"""Is eating lunch alone at a restaurant perceived as normal or strange? How might others view someone eating alone?""","""식당에서 혼자 점심을 먹는 것이 정상으로 인식되나요, 아니면 이상하게 인식되나요? 다른 사람들은 혼자 식사하는 사람을 어떻게 보나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+Eating lunch alone at a restaurant in Korea is becoming more normal, especially among younger people and in urban areas. While some older generations might still see ""honja siksa"" (eating alone) as a bit lonely or unusual, many understand it as part of modern busy lifestyles. Generally, people might be curious but usually don't judge negatively.
+
+Korean:
+한국에서는 특히 젊은 세대와 도시 지역에서 혼자 점심 먹는 것이 점점 보편화되고 있습니다. 다만 어르신들 중에는 혼자 식사하는 것을 외롭거나 이상하게 볼 수도 있지만, 현대의 바쁜 생활방식으로 이해하는 경우가 많아요. 보통 호기심은 가질 수 있지만 부정적인 시선은 적습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,16,Solo Dining,"""Is eating lunch alone at a restaurant perceived as normal or strange? How might others view someone eating alone?""","""식당에서 혼자 점심을 먹는 것이 정상으로 인식되나요, 아니면 이상하게 인식되나요? 다른 사람들은 혼자 식사하는 사람을 어떻게 보나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+Eating lunch alone at a restaurant in Korea is becoming more normal, especially with the rise of honbap culture (eating alone). While some older generations might have found it unusual, many people now see it as a sign of independence and convenience rather than something strange.
+
+Korean:
+한국에서는 혼밥 문화가 확산되면서 식당에서 혼자 점심을 먹는 것이 점점 자연스럽게 여겨집니다. 예전에는 조금 어색하게 볼 수도 있었지만, 지금은 독립적이고 편리한 행동으로 인식됩니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,16,Solo Dining,"""Is eating lunch alone at a restaurant perceived as normal or strange? How might others view someone eating alone?""","""식당에서 혼자 점심을 먹는 것이 정상으로 인식되나요, 아니면 이상하게 인식되나요? 다른 사람들은 혼자 식사하는 사람을 어떻게 보나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+Eating lunch alone at a restaurant in Korea is becoming more accepted and seen as normal, especially in urban areas. People may notice someone eating alone, but it is less likely to be viewed negatively now; solo diners are often respected for their independence. The term ""honbap"" (eating alone) is widely understood and no longer carries a strong social stigma.
+
+Korean:
+한국에서는 특히 도심에서 혼자 점심 먹는 것이 점점 더 자연스럽고 정상으로 인식되고 있습니다. 사람들이 혼자 식사하는 사람을 신경 쓰기도 하지만, 부정적으로 보는 경우는 드뭅니다. '혼밥'이라는 말도 널리 알려져 있어 사회적 낙인이 거의 없습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,17,Tipping,"""Is it customary to leave a tip for a taxi driver or at a restaurant? Culturally, how is leaving extra money perceived?""","""택시 기사에게 혹은 음식점에 팁을 남기는 것이 관례인가요? 문화적으로, 여분의 돈을 남기는 것은 어떻게 인식되나요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korea, it is not customary to leave a tip for taxi drivers or at restaurants. The service charge is usually included in the bill, and leaving extra money is often seen as unnecessary or even confusing. However, in some tourist areas, small tips might be accepted but are not expected.
+
+Korean:
+한국에서는 택시 기사나 음식점에서 팁을 남기는 것이 일반적이지 않습니다. 서비스 요금이 보통 포함되어 있어 추가로 돈을 주는 것은 불필요하거나 어색하게 여겨집니다. 다만 관광지에서는 소액 팁이 받아들여질 수 있지만 기대되지는 않습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,17,Tipping,"""Is it customary to leave a tip for a taxi driver or at a restaurant? Culturally, how is leaving extra money perceived?""","""택시 기사에게 혹은 음식점에 팁을 남기는 것이 관례인가요? 문화적으로, 여분의 돈을 남기는 것은 어떻게 인식되나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In South Korea, it is not customary to leave a tip for taxi drivers or at restaurants. Usually, the price is fixed, and extra money is often politely refused. Leaving a tip can sometimes be seen as unnecessary or confusing, as Korean culture values fair pricing, called ""jeong"" (정), based on trust and respect.
+
+Korean:
+한국에서는 택시 기사나 음식점에서 팁을 남기는 것이 일반적이지 않습니다. 요금은 보통 정해져 있어 추가 금액을 거절하는 경우가 많습니다. 팁을 주는 것은 불필요하거나 당황스러운 일로 여겨질 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,17,Tipping,"""Is it customary to leave a tip for a taxi driver or at a restaurant? Culturally, how is leaving extra money perceived?""","""택시 기사에게 혹은 음식점에 팁을 남기는 것이 관례인가요? 문화적으로, 여분의 돈을 남기는 것은 어떻게 인식되나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korea, tipping is generally not customary at restaurants or for taxi drivers. Leaving extra money is often unnecessary and can sometimes confuse or embarrass the person receiving it. The culture emphasizes good service included in the price, so saying ""gamsahamnida"" (thank you) is enough.
+
+Korean:
+한국에서는 음식점이나 택시에서 팁을 남기는 것이 일반적이지 않습니다. 여분의 돈을 주는 것은 필요 없고 때로는 상대방을 당황하게 할 수 있습니다. 좋은 서비스는 기본 요금에 포함된다는 문화가 강하며, 감사하다면 그냥 ""감사합니다""라고 말하는 것으로 충분합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,17,Tipping,"""Is it customary to leave a tip for a taxi driver or at a restaurant? Culturally, how is leaving extra money perceived?""","""택시 기사에게 혹은 음식점에 팁을 남기는 것이 관례인가요? 문화적으로, 여분의 돈을 남기는 것은 어떻게 인식되나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korea, it is not customary to leave a tip for taxi drivers or at restaurants. The service charge is usually included in the price, so giving extra money is not expected and can sometimes be politely refused. Leaving a tip is not a common practice and may be seen as unusual.
+
+Korean:
+한국에서는 택시 기사나 음식점에서 팁을 남기는 것이 일반적이지 않습니다. 서비스 요금이 이미 포함되어 있어 추가로 돈을 주는 것은 기대되지 않으며, 가끔 정중히 거절되기도 합니다. 여분의 돈을 남기는 것은 흔한 문화가 아닙니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,17,Tipping,"""Is it customary to leave a tip for a taxi driver or at a restaurant? Culturally, how is leaving extra money perceived?""","""택시 기사에게 혹은 음식점에 팁을 남기는 것이 관례인가요? 문화적으로, 여분의 돈을 남기는 것은 어떻게 인식되나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korea, tipping is generally not customary, whether for taxi drivers or at restaurants. Leaving extra money, or ""geumyeon,"" is often unnecessary and can sometimes confuse the receiver. Good service is considered standard, so saying ""gamsahamnida"" (thank you) is more common than tipping.
+
+Korean:
+한국에서는 택시 기사나 음식점에서 팁을 주는 것이 일반적이지 않습니다. 여분의 돈을 남기는 것은 대체로 필요 없고 오히려 상대방이 당황할 수 있습니다. 좋은 서비스는 기본으로 여기고 ""감사합니다""라고 말하는 것이 더 일반적입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,17,Tipping,"""Is it customary to leave a tip for a taxi driver or at a restaurant? Culturally, how is leaving extra money perceived?""","""택시 기사에게 혹은 음식점에 팁을 남기는 것이 관례인가요? 문화적으로, 여분의 돈을 남기는 것은 어떻게 인식되나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+Tipping is not customary in Korea. At restaurants or taxis, service charges are usually included, so leaving extra money is often unnecessary and can sometimes confuse people. If you try to leave a tip, Koreans might politely refuse or think you are being very generous beyond the norm.
+
+Korean:
+한국에서는 팁 문화가 일반적이지 않습니다. 음식점이나 택시 요금에 서비스료가 포함된 경우가 많아 추가로 돈을 남기는 것은 보통 불필요하며, 때로는 상대방이 당황할 수 있습니다. 팁을 주려고 하면 정중히 거절당하거나 과한 호의로 여겨질 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,18,Conflict Resolution,"""If you have a disagreement with a neighbor, is it better to confront them directly or leave a note or speak to a landlord? Why?""","""이웃과 의견 차이가 있다면 직접 대면하는 것이 나을까요, 아니면 메모를 남기거나, 혹은 집주인과 얘기를 나누는게 나을까요? 왜 그럴까요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, it is usually better to address a disagreement with a neighbor indirectly first, such as leaving a polite note or speaking to the landlord (jipjuin) rather than confronting them directly. This approach helps maintain harmony (hwa) and avoids public embarrassment, which is highly valued in Korean society.
+
+Korean:
+한국 문화에서는 이웃과의 갈등이 있을 때 직접 대면하기보다는 정중한 메모를 남기거나 집주인과 먼저 이야기하는 것이 더 좋습니다. 이는 화(화합)를 중시하고 상대방의 체면을 지켜주려는 문화 때문입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,18,Conflict Resolution,"""If you have a disagreement with a neighbor, is it better to confront them directly or leave a note or speak to a landlord? Why?""","""이웃과 의견 차이가 있다면 직접 대면하는 것이 나을까요, 아니면 메모를 남기거나, 혹은 집주인과 얘기를 나누는게 나을까요? 왜 그럴까요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is usually better to approach a neighbor politely and directly to resolve conflicts, practicing ""nunchi"" (social awareness) to maintain harmony. Leaving a note or involving a landlord is less common and might be seen as avoiding responsibility or causing tension unnecessarily.
+
+Korean:
+한국 문화에서는 이웃과의 갈등이 생기면 예의 바르게 직접 대화하며 '눈치'를 보면서 화합을 유지하는 것이 보통 더 좋습니다. 메모를 남기거나 집주인에게 맡기는 것은 책임 회피나 불필요한 갈등 유발로 여겨질 수 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,18,Conflict Resolution,"""If you have a disagreement with a neighbor, is it better to confront them directly or leave a note or speak to a landlord? Why?""","""이웃과 의견 차이가 있다면 직접 대면하는 것이 나을까요, 아니면 메모를 남기거나, 혹은 집주인과 얘기를 나누는게 나을까요? 왜 그럴까요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is often better to approach a neighbor respectfully and indirectly first, such as leaving a polite memo or speaking through a mediator like the jipju-in (landlord). Direct confrontation can be seen as too aggressive or causing “nunchi” issues, so gentle communication preserves harmony.
+
+Korean:
+한국 문화에서는 직접적으로 대면하기보다는 정중한 메모를 남기거나 집주인 같은 중재자를 통해 얘기하는 것이 더 낫습니다. 직접적인 대립은 지나치게 공격적으로 보일 수 있어 조화를 유지하는 데 부정적입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,18,Conflict Resolution,"""If you have a disagreement with a neighbor, is it better to confront them directly or leave a note or speak to a landlord? Why?""","""이웃과 의견 차이가 있다면 직접 대면하는 것이 나을까요, 아니면 메모를 남기거나, 혹은 집주인과 얘기를 나누는게 나을까요? 왜 그럴까요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is generally better to address the issue politely and indirectly first, such as leaving a memo or talking to a landlord, to avoid direct confrontation, which can be seen as rude. Koreans often prefer ""nunchi"" (social awareness) and maintaining harmony in relationships rather than open conflict.
+
+Korean:
+한국 문화에서는 직접 대면하기보다는 메모를 남기거나 집주인과 얘기하는 식으로 공손하고 간접적으로 문제를 해결하는 것이 보통입니다. 직접적인 대립은 무례하게 여겨질 수 있고, 사람들이 주로 '눈치'를 보며 조화를 중시하기 때문입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,18,Conflict Resolution,"""If you have a disagreement with a neighbor, is it better to confront them directly or leave a note or speak to a landlord? Why?""","""이웃과 의견 차이가 있다면 직접 대면하는 것이 나을까요, 아니면 메모를 남기거나, 혹은 집주인과 얘기를 나누는게 나을까요? 왜 그럴까요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is generally preferred to avoid direct confrontations to maintain harmony, or ""hwa"". Leaving a polite note or speaking to the ""jipjuin"" (landlord) is often considered better, as direct conflict can be seen as rude or causing ""nunchi"" (loss of face). Maintaining good relationships is very important.
+
+Korean:
+한국 문화에서는 대체로 조화를 유지하기 위해 직접적인 대면을 피하는 것이 좋습니다. 예의를 갖춘 메모를 남기거나 집주인과 상의하는 것이 더 낫다고 생각합니다. 직접적인 갈등은 무례하거나 '눈치'를 잃는 것으로 여겨질 수 있어 좋은 관계를 중요시합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,18,Conflict Resolution,"""If you have a disagreement with a neighbor, is it better to confront them directly or leave a note or speak to a landlord? Why?""","""이웃과 의견 차이가 있다면 직접 대면하는 것이 나을까요, 아니면 메모를 남기거나, 혹은 집주인과 얘기를 나누는게 나을까요? 왜 그럴까요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean culture, it is usually better to avoid direct confrontation, so leaving a polite note or speaking to the ""jipju-in"" (landlord) first is preferred to maintain harmony and avoid conflict. Koreans value ""hwa"" (harmony) and often try to resolve issues indirectly to preserve good relationships.
+
+Korean:
+한국 문화에서는 직접 대면하기보다는 예의 바른 메모를 남기거나 먼저 집주인과 상담하는 것이 더 나은 경우가 많습니다. 갈등보다는 화를 중요하게 생각하여 원만한 관계 유지를 선호하기 때문입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,19,Sharing Food,"""When eating a soup or stew with close friends/family, do people use their own spoons in the communal pot, or must they use a serving ladle?""","""친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 사람들은 공동 냄비에 자신의 숟가락을 사용해야 하나요, 아니면 서빙 국자를 사용해야 하나요?""",det,0,0.0,gpt-4.1-mini,"English:
+In Korean culture, when eating soup or jjigae with close friends or family, it is customary to use a serving ladle called ""gukja"" to transfer food from the communal pot to your own bowl. Using your personal spoon directly in the shared pot is generally avoided to maintain hygiene.
+
+Korean:
+한국 문화에서는 친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 공동 냄비에서 개인 숟가락을 직접 사용하는 대신 ""국자""를 사용해 자신의 그릇에 덜어 먹는 것이 일반적입니다. 위생을 위해 개인 숟가락을 냄비에 넣는 것은 피합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,19,Sharing Food,"""When eating a soup or stew with close friends/family, do people use their own spoons in the communal pot, or must they use a serving ladle?""","""친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 사람들은 공동 냄비에 자신의 숟가락을 사용해야 하나요, 아니면 서빙 국자를 사용해야 하나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+In Korean culture, when eating soup or stew with close friends or family, people typically use a serving ladle (gukja) to take the food from the communal pot, and then eat with their own spoons (sutgarak). Directly using one's own spoon in the shared pot is generally avoided to keep it hygienic.
+
+Korean:
+한국 문화에서는 친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 보통 공동 냄비에서 음식을 덜 때 서빙 국자(국자)를 사용하고 개인 숟가락(숟가락)으로 먹습니다. 자신의 숟가락을 직접 냄비에 넣는 것은 보통 위생상 피합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,19,Sharing Food,"""When eating a soup or stew with close friends/family, do people use their own spoons in the communal pot, or must they use a serving ladle?""","""친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 사람들은 공동 냄비에 자신의 숟가락을 사용해야 하나요, 아니면 서빙 국자를 사용해야 하나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+In Korean culture, when eating soup or stew like jjigae with close friends or family, it is customary to use a serving ladle called ""gukja"" to scoop from the communal pot. Using individual spoons directly in the shared pot is avoided to maintain hygiene and respect.
+
+Korean:
+한국 문화에서는 친한 친구나 가족과 함께 찌개 같은 국물을 먹을 때, 공동 냄비에서 직접 자신의 숟가락을 사용하지 않고 보통 ""국자""를 사용해 덜어 먹습니다. 위생과 예의를 위해서입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,19,Sharing Food,"""When eating a soup or stew with close friends/family, do people use their own spoons in the communal pot, or must they use a serving ladle?""","""친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 사람들은 공동 냄비에 자신의 숟가락을 사용해야 하나요, 아니면 서빙 국자를 사용해야 하나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+In Korean culture, when eating soup or jjigae with close friends or family, it is customary to use a serving ladle rather than your personal spoon to take food from the communal pot. Personal spoons, called sutgarak, are used only for eating from your own bowl to maintain hygiene.
+
+Korean:
+한국 문화에서는 친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 공동 냄비에서 음식을 덜 때 개인 숟가락 대신 서빙 국자를 사용하는 것이 보통입니다. 개인 숟가락은 자신의 그릇에서 먹을 때만 사용하여 위생을 지킵니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,19,Sharing Food,"""When eating a soup or stew with close friends/family, do people use their own spoons in the communal pot, or must they use a serving ladle?""","""친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 사람들은 공동 냄비에 자신의 숟가락을 사용해야 하나요, 아니면 서빙 국자를 사용해야 하나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+In Korean culture, when eating soup or stew with close friends or family, it is considered polite to use a serving ladle to take portions from the communal pot instead of putting your own spoon directly into the pot. Using the ladle helps keep the shared food hygienic and respectful of others.
+
+Korean:
+한국에서는 친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 공동 냄비에 자신의 숟가락을 넣기보다는 서빙 국자(jeogori gukja)를 사용하여 덜어 먹는 것이 예의입니다. 이렇게 해야 위생적이고 서로를 배려하는 태도입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,19,Sharing Food,"""When eating a soup or stew with close friends/family, do people use their own spoons in the communal pot, or must they use a serving ladle?""","""친한 친구나 가족과 함께 국이나 찌개를 먹을 때, 사람들은 공동 냄비에 자신의 숟가락을 사용해야 하나요, 아니면 서빙 국자를 사용해야 하나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+In Korean culture, when eating soup or jjigae with family or close friends, it is customary to use a separate serving ladle (gukja) to transfer food from the communal pot into individual bowls, rather than putting your own spoon directly into the shared pot.
+
+Korean:
+한국 문화에서는 친한 가족이나 친구와 국이나 찌개를 먹을 때, 각자 숟가락을 공동 냄비에 넣지 않고 서빙 국자(gukja)를 사용해 개인 그릇에 덜어 먹는 것이 일반적입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,20,Exams/Big Events,"""What is a superstitious practice or specific food people eat (or avoid) before a major exam or job interview?""","""주요 시험이나 면접 전에 사람들이 미신적인 관행이나 특정 음식을 먹거나 피하는게 있나요?""",det,0,0.0,gpt-4.1-mini,"English:
+Before major exams or job interviews, many Koreans eat ""miyeokguk"" (seaweed soup) for good luck and health. Some avoid eating spicy or heavy foods to stay calm and focused. Also, students might carry a ""bokjumeoni"" (lucky pouch) for extra luck.
+
+Korean:
+주요 시험이나 면접 전에 많은 한국인들이 행운과 건강을 위해 미역국을 먹습니다. 매운 음식이나 무거운 음식은 피해서 마음을 차분하게 유지하려고 합니다. 학생들은 행운을 위해 복주머니를 가지고 다니기도 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,20,Exams/Big Events,"""What is a superstitious practice or specific food people eat (or avoid) before a major exam or job interview?""","""주요 시험이나 면접 전에 사람들이 미신적인 관행이나 특정 음식을 먹거나 피하는게 있나요?""",stoch,1,1.0,gpt-4.1-mini,"English:
+Before major exams or job interviews in Korea, many people avoid eating spicy or heavy foods to prevent stomach issues. Some also eat ""tteok"" (rice cakes) as a good luck food, symbolizing success and smooth progress. Wearing red underwear is another superstitious practice believed to bring good fortune.
+
+Korean:
+한국에서는 주요 시험이나 면접 전에 매운 음식이나 무거운 음식을 피해 속쓰림을 예방합니다. 합격과 순조로움을 상징하는 떡을 먹기도 하고, 행운을 기원하며 빨간 속옷을 입는 미신적인 관행도 있습니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,20,Exams/Big Events,"""What is a superstitious practice or specific food people eat (or avoid) before a major exam or job interview?""","""주요 시험이나 면접 전에 사람들이 미신적인 관행이나 특정 음식을 먹거나 피하는게 있나요?""",stoch,2,1.0,gpt-4.1-mini,"English:
+Before major exams or job interviews in Korea, some people avoid eating spicy or greasy foods to stay calm and focused. It is also common to eat ""baekseolgi,"" a type of white rice cake, believed to bring purity and success. People might carry a ""paejeon"" or wear a ""bokjumeoni"" (luck pouch) as good luck charms.
+
+Korean:
+한국에서는 주요 시험이나 면접 전에 매운 음식이나 기름진 음식을 피하면서 집중력을 유지하려고 합니다. 보통은 순수와 성공을 기원하는 백설기를 먹기도 하고, 행운을 기원하며 패전이나 복주머니를 휴대하기도 합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,20,Exams/Big Events,"""What is a superstitious practice or specific food people eat (or avoid) before a major exam or job interview?""","""주요 시험이나 면접 전에 사람들이 미신적인 관행이나 특정 음식을 먹거나 피하는게 있나요?""",stoch,3,1.0,gpt-4.1-mini,"English:
+Before major exams or job interviews, Koreans often eat miyeokguk (seaweed soup) for good luck and to calm nerves. Some avoid eating red chili peppers, believing it might make them too nervous or cause failure. Carrying a small lucky charm or writing exam success phrases like ""hyeongdeul"" on their belongings is also common.
+
+Korean:
+주요 시험이나 면접 전에 미역국을 먹으며 행운을 기원하고 긴장을 푸는 경우가 많습니다. 고추를 피하는 사람들도 있는데, 너무 긴장하거나 실패할 수 있다는 미신 때문입니다. 작은 행운 부적을 가지고 다니거나 '형들' 같은 합격 기원 문구를 쓰는 것도 흔합니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,20,Exams/Big Events,"""What is a superstitious practice or specific food people eat (or avoid) before a major exam or job interview?""","""주요 시험이나 면접 전에 사람들이 미신적인 관행이나 특정 음식을 먹거나 피하는게 있나요?""",stoch,4,1.0,gpt-4.1-mini,"English:
+Before major exams or job interviews, Koreans often eat ""miyeok-guk"" (seaweed soup) for good luck and stamina. Some avoid eating spicy or heavy foods to prevent stomach issues and discomfort.
+
+Korean:
+주요 시험이나 면접 전에는 행운과 체력을 위해 미역국을 먹는 경우가 많고, 매운 음식이나 무거운 음식은 소화 문제를 피하기 위해 피하는 편입니다.",
+5e8925f9-5288-4a10-acdb-e4dc9588d0e6,2026-05-07T02:20:10.970156,20,Exams/Big Events,"""What is a superstitious practice or specific food people eat (or avoid) before a major exam or job interview?""","""주요 시험이나 면접 전에 사람들이 미신적인 관행이나 특정 음식을 먹거나 피하는게 있나요?""",stoch,5,1.0,gpt-4.1-mini,"English:
+Before major exams or job interviews, many Koreans eat seaweed soup called ""miyeokguk"" for good luck and strength. They also avoid foods considered too spicy or heavy, fearing it may upset their stomach or mind.
+
+Korean:
+주요 시험이나 면접 전에 많은 한국인들은 행운과 힘을 위해 미역국을 먹습니다. 또한 속을 불편하게 할 수 있는 매운 음식이나 무거운 음식을 피하는 경우가 많습니다.",
