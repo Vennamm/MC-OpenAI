@@ -142,6 +142,15 @@ df['question_id'] = df['question_id'].astype(str)
 
 query_params = st.query_params
 
+
+
+if 'participant_id' not in st.session_state:
+    existing_pid = query_params.get("pid", None)
+    if existing_pid:
+        st.session_state.participant_id = str(existing_pid)
+    else:
+        st.session_state.participant_id = str(uuid.uuid4())
+
 MODELS = ["gpt-4.1-mini", "gpt-5-mini", "gpt-5.4-mini"]
 
 if "question_model_map" not in st.session_state:
@@ -170,13 +179,6 @@ if "question_model_map" not in st.session_state:
         start += count
 
     st.session_state.question_model_map = question_model_map
-
-if 'participant_id' not in st.session_state:
-    existing_pid = query_params.get("pid", None)
-    if existing_pid:
-        st.session_state.participant_id = str(existing_pid)
-    else:
-        st.session_state.participant_id = str(uuid.uuid4())
 
 if 'last_logged_drafts' not in st.session_state:
     st.session_state.last_logged_drafts = {}
