@@ -188,6 +188,11 @@ if "question_model_map" not in st.session_state:
 
     st.session_state.question_model_map = question_model_map
 
+if "recovery_found" not in st.session_state:
+    st.session_state.recovery_found = False
+
+
+
 if 'last_logged_drafts' not in st.session_state:
     st.session_state.last_logged_drafts = {}
     
@@ -299,6 +304,7 @@ def restore_state_from_events():
     events_df = load_participant_events()
     if events_df.empty:
         st.session_state.recovery_loaded = True
+        st.session_state.recovery_found = False
         return
 
     latest_answers = {}
@@ -430,6 +436,7 @@ def restore_state_from_events():
         st.session_state.idx = first_incomplete_idx
 
     st.session_state.recovery_loaded = True
+    st.session_state.recovery_found = True
 
 
 
@@ -549,7 +556,7 @@ def all_rated():
             return False
     return True
     
-if st.session_state.recovery_loaded:
+if st.session_state.recovery_loaded and st.session_state.recovery_found:
     st.info("Your previous responses have been restored. You can continue where you left off.")
 
 if not st.session_state.recovery_loaded:
