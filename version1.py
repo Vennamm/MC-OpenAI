@@ -16,7 +16,7 @@ st.set_page_config(
 
 
 
-AI_BANK_FILE = "mock_ai_bank.csv"
+AI_BANK_FILE = "ai_bank.csv"
 SHEET_NAME = "Participant Responses"
 EVENTS_TAB = "response_events"
 ANALYSIS_TAB = "analysis_ready"
